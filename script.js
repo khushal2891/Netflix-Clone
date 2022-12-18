@@ -1,3 +1,5 @@
+// khushal
+
 let navbar = document.getElementById("navbar")
 
 const toggle = () =>{
