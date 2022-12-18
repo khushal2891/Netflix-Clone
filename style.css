@@ -41,7 +41,8 @@ html{
 
 }
 .navbar{
-    width: 50%;
+    width: 85%;
+    /* justify-content: flex-start; */
 }
 
 .logo{
@@ -66,9 +67,8 @@ ul li{
     width: 30%; 
     align-items: center;
     margin-left: auto;
-    justify-content: flex-end;
+    justify-content: center;
 }
-
 .right-nav img{
     width: 50px;
     border-radius:  5px;
@@ -142,6 +142,7 @@ ul li{
 .banner .btn1{
     background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
+    margin-right: auto;
 }
 
 .play {
@@ -167,49 +168,139 @@ ul li{
 
 .video-container video{
     width: 100%;
-    height: 80vh;
+    height: 100%;
     object-fit: cover;
 }
 
 .color-overlay{
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
     background-color: #000;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    z-index: -6;
 }
 
 .carousel{
-    width: 93%;
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
+    width: 100%;
     border-radius: 20px;
     padding: 0 1%;
-
+ 
 }
 
-.carousel h3{
+.carousel h1{
     color: #fff;
     font-size: 1.5 rem;
+    margin-left: 20px;
 
 }
 
 .carousel-slider{
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     width: 100%;
     height: 250px;
-    padding: 0 50px ;
+    padding: 0 5px ;
+    overflow: hidden;
 }
 
 .carousel-list{
     position:absolute;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0 50px;
+}
+.carousel-list{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+
+}
+.carousel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 180px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 7px;
+    object-fit: fill;
+    cursor: pointer;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+
+}
+
+.togglebtn{
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:1150px) {
+    .banner h1 {
+        font-size: 3.8 rem;
+
+    }
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+.leftnav,.right-nav{
+    width: 100%;
+    justify-content: flex-start;
+    margin: 20px 0;
+
+}
+
+ul li{
+    margin-right: 30px;
+}
+
+.togglebtn{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 2px; 
+    position:absolute;
+    right: 20px;
+}
+}
+
+
+@media only screen and (max-width:786px){
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .banner{
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .banner h1{
+        font-size: 2rem;
+    }
+.menu{
+    flex-direction: column;
+}
+ul li{
+    margin-bottom: 10px;
+}
 }
