@@ -1,6 +1,10 @@
 # Netflix-Clone
 
-A Netflix look-alike, or clone. For fun, training, and practice.
+A Netflix look-alike, or clone. </br>
+
+<a href="https://streaming-clone.pages.dev/">Streaming Clone</a>
+
+For fun, training, and practice.
 
 Forked from contributor <a href="https://github.com/khushal2891/Netflix-Clone">Khushal</a>.
 
