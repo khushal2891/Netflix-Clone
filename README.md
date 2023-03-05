@@ -2,7 +2,7 @@
 
 A Netflix look-alike, or clone. </br>
 
-<a href="https://streaming-clone.pages.dev/">Streaming Clone</a>
+<a href="https://streaming-clone.pages.dev/">Not Netflix</a>
 
 For fun, training, and practice.
 
