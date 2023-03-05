@@ -119,10 +119,10 @@ body {
     width: 300px;
 }
 
-.carousel-item img {
-    border-radius: 5px;
-    height: 180px;
-    width: 100%;
+.carousel img {
+    border-radius: 6px;
+    height: 190px;
+    width: 300px;
 }
 
 .carousel-list {
@@ -139,7 +139,6 @@ body {
     display: flex;
     height: 250px;
     overflow: hidden;
-    padding: 0 5px ;
     width: 100%;
 }
 
@@ -159,16 +158,22 @@ body {
     padding: 0 1% ;
 }
 
+header {
+    background-color: black;
+    display: flex;
+        justify-content:space-between;
+    padding: 0px 1.25%;
+    width: 100%;
+}
+
 .info {
     color: #fff;
 }
 
 .inner {
-    margin: 0 auto ;
+    margin: 0 auto;
     max-height: 100vh;
-    max-width: 95%;
-    padding: 1%;
-    /* overflow: scroll; */
+    width: 100%;
 }
 
 .leftnav {
@@ -177,7 +182,8 @@ body {
     width: 100%;
 }
 
-.logo {
+.logo { 
+    text-align: center;
     width: 15%;
 }
 
@@ -208,13 +214,9 @@ main {
 }
 
 .navbar {
-    justify-content: flex-start; 
+    display: flex;
+        justify-content: space-evenly;
     width: 85%;
-}
-
-.navigation {
-    background-color: black;
-    width: 100%;
 }
 
 .play {
