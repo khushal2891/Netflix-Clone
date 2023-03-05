@@ -2,7 +2,7 @@
 
 A Netflix look-alike, or clone. 
 
-<a href="https://not-netflix.pages.dev/">Not Netflix</a>
+<a href="https://dancq.github.io/Not-Netflix/">Not Netflix</a>
 
 For fun, training, and practice. </br>
 I wanted to play around with this idea with my own preferred content, and code design.
