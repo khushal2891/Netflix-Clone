@@ -162,7 +162,6 @@ header {
     background-color: black;
     display: flex;
         justify-content:space-between;
-    padding: 0px 1.25%;
     width: 100%;
 }
 
@@ -182,16 +181,8 @@ header {
     width: 100%;
 }
 
-.logo { 
-    text-align: center;
-    width: 15%;
-}
-
 .logo img {
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    margin-top: 15px;
+    margin: 15px 5rem 0px 2.5rem;
     width: 140px;
 }
 
@@ -210,6 +201,7 @@ main {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: flex-start;
+    font-weight: 410;
     width: 100vh;
 }
 
@@ -222,6 +214,11 @@ main {
 .play {
     color: black;
     margin: 0 5px;
+}
+
+p {
+    color:#fff;
+
 }
 
 .right-nav {
