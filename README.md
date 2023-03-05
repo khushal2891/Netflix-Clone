@@ -1,4 +1,4 @@
-# Netflix-Clone
+# Not-Netflix
 
 A Netflix look-alike, or clone. </br>
 
