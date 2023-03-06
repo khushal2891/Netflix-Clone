@@ -16,14 +16,6 @@ body {
     width: 100%;
 }
 
-.box-inner {
-    position: absolute;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: 100%;
-    white-space: nowrap;   
-}   
-
 button {
     background-color: rgba(255, 255, 255, 0.5);
     color:white;
@@ -41,25 +33,20 @@ button:hover {
     color: black;
 }
 
-.carousel-list {
+.carousel { 
     align-items: center;
     display: flex;
-        justify-content: center;
-    padding: 0 50px;
-    position:absolute;
-}
-
-.carousel-slider {
-    /* position: relative; */
-    align-items: center;
-    display: flex;
-    height: 250px;
-    overflow: hidden;
+    height: 200px;
+    overflow: scroll;
     width: 100%;
 }
 
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
 .catalogue {
-    background: linear-gradient(180deg, rgba(0,0,0,0.001)2%, rgba(0,0,0,0.4) 10%, rgba(0,0,0,1)50%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.001)2%, rgba(0,0,0,0.4) 10%, rgba(0,0,0,1)40%);
     margin-top: 15px;
     padding-top:15px;
 }
@@ -194,7 +181,7 @@ nav {
     z-index: -1;
 }
 
-.video video {
+video {
     height: 100%;
     object-fit:cover;
     width: 100%;
