@@ -4,39 +4,6 @@
     padding: 0;
 }
 
-.banner {
-    display: flex;
-        flex-direction: column;
-    padding-top: 40vh;
-    margin-left: 2.5%;
-}
-
-.banner h1 { 
-    color:transparent;
-    font-size: 2.5rem;
-    background: linear-gradient(90deg, #f32170 ,#be421c , #cf23cf , #cc6b33);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.banner h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-}
-
-.banner .banner-code {
-    font-size: 15 rem;
-    font-weight: 900;
-}
-
-.banner .heading {
-    font-style: italic;
-    padding: 0px 20 px;
-}
-
 body {
     background-color: black;
     color:white;
@@ -74,26 +41,6 @@ button:hover {
     color: black;
 }
 
-.selection {
-    width: 100%;
-}
-
-.category h3 {
-    color: white;
-    font-size: 1.4rem;
-    font-weight:600;
-    letter-spacing: 1.1px;
-    margin-left: 15px;
-}
-
-.selection img {
-    border-radius: 6px;
-    cursor: pointer; 
-    height: 180px;
-    padding:0px 0px 0px 10px;
-    width: 300px;
-}
-
 .carousel-list {
     align-items: center;
     display: flex;
@@ -109,6 +56,20 @@ button:hover {
     height: 250px;
     overflow: hidden;
     width: 100%;
+}
+
+.catalogue {
+    background: linear-gradient(180deg, rgba(0,0,0,0.001)2%, rgba(0,0,0,0.4) 10%, rgba(0,0,0,1)50%);
+    margin-top: 15px;
+    padding-top:15px;
+}
+
+.category h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight:600;
+    letter-spacing: 1.1px;
+    margin-left: 15px;
 }
 
 .fa {
@@ -128,14 +89,6 @@ header {
     background-color: black;
     display: flex;
     width: 100%;
-}
-
-.info {
-    color: white;
-}
-
-.showcase { 
-    min-height: 70vh;
 }
 
 .logo img {
@@ -169,12 +122,6 @@ main {
     list-style: none;
 }
 
-.catalogue {
-    background: linear-gradient(180deg, rgba(0,0,0,0.001)2%, rgba(0,0,0,0.4) 10%, rgba(0,0,0,1)50%);
-    margin-top: 15px;
-    padding-top:15px;
-}
-
 nav { 
     display: flex;
         flex-wrap: wrap;
@@ -199,10 +146,39 @@ nav {
     cursor:pointer;
 }
 
-.right-nav p {
-    display: inline;
-    font-size: 1rem;
-    margin-left: 5px;
+.selection img {
+    border-radius: 6px;
+    cursor: pointer; 
+    height: 180px;
+    padding:0px 0px 0px 10px;
+    width: 300px;
+}
+
+.showcase { 
+    min-height: 70vh;
+}
+
+.showcase-title {
+    display: flex;
+        flex-direction: column;
+    padding-top: 40vh;
+    margin-left: 2.5%;
+}
+
+.showcase-title h1 { 
+    color:transparent;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #f32170 ,#be421c , #cf23cf , #cc6b33);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.showcase-title h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: capitalize;
 }
 
 .togglebtn {
@@ -225,16 +201,10 @@ nav {
 }
 
 
-@media only screen and (max-width:1150px) {
+@media (max-width:1150px) {
 
     nav {
         display: none;
-        width: 100%;
-    }
-
-    .right-nav {
-        justify-content: flex-start;
-        margin: 20px 0;
         width: 100%;
     }
 
@@ -249,18 +219,10 @@ nav {
 }
 
 
-@media only screen and (max-width:786px) {
+@media (max-width:786px) {
 
-    .banner h1 {
+    .showcase-title h1 {
         font-size: 2rem;
     }
 
-}
-
-@media only screen and (max-width:550px) {
-    
-    .menu {
-        flex-direction: column;
-    }
-    
 }
