@@ -36,7 +36,9 @@ button:hover {
 .carousel { 
     align-items: center;
     display: flex;
-    height: 200px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    height: 210px;
     overflow: scroll;
     width: 100%;
 }
