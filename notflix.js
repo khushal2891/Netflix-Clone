@@ -11,3 +11,12 @@ document.body.addEventListener("click", function() {
         video.play();
     }
 });
+
+document.body.addEventListener("mousemove", function() {
+
+    interact = true;
+
+    if(interact && video.paused) {
+        video.play();
+    }
+});
