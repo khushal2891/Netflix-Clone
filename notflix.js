@@ -14,8 +14,6 @@ function show() {
     video.style.width = "100vw";
     video.style.zIndex = "-1";
 
-    video.playsInLine = "true";
-    video.loop = "true";  
     video.play();
 }
 
