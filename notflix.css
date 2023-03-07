@@ -173,7 +173,6 @@ nav {
     display: none;
 }
 
-/*
 video {
     height: 100vh;
     position: absolute;
@@ -183,7 +182,6 @@ video {
     z-index: -1;
     object-fit:cover;
 }
-*/
 
 
 @media (max-width:1150px) {
