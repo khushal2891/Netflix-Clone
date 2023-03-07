@@ -12,6 +12,7 @@ function show() {
     video.style.objectFit = "cover";
     video.style.width = "100vw";
     video.style.height = "100vh";
+    video.setAttribute("playsinline");
     video.play();
     video.loop = "true";   
 }
