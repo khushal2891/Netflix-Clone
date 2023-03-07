@@ -5,16 +5,18 @@ let interact = false; //browsers prevent autoplay
 
 function show() {
 
-    video.style.position = "absolute";
-    video.style.top = "0";
+    video.style.position = "absolute"; 
     video.style.left = "0";
-    video.style.zIndex = "-1";
+    video.style.top = "0";
+
+    video.style.height = "100vh";
     video.style.objectFit = "cover";
     video.style.width = "100vw";
-    video.style.height = "100vh";
-    video.setAttribute("playsinline");
+    video.style.zIndex = "-1";
+
+    video.playsInLine = "true";
+    video.loop = "true";  
     video.play();
-    video.loop = "true";   
 }
 
 
