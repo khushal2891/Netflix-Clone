@@ -204,6 +204,10 @@ video {
 
 @media (max-width:786px) {
 
+    .logo img {
+        margin-left: 2rem;
+    }
+
     .showcase-title h1 {
         font-size: 2rem;
     }
