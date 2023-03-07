@@ -173,17 +173,17 @@ nav {
     display: none;
 }
 
-
+/*
 video {
-    min-height: 100vh;
+    height: 100vh;
     position: absolute;
         left: 0;
         top: 0;
-    min-width: 100vw;
+    width: 100vw;
     z-index: -1;
     object-fit:cover;
 }
-
+*/
 
 
 @media (max-width:1150px) {
