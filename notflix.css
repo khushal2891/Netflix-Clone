@@ -173,17 +173,17 @@ nav {
     display: none;
 }
 
-/*
+
 video {
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
         left: 0;
         top: 0;
-    width: 100vw;
+    min-width: 100vw;
     z-index: -1;
     object-fit:cover;
 }
-*/
+
 
 
 @media (max-width:1150px) {
