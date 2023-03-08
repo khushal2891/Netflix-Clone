@@ -173,14 +173,15 @@ nav {
     display: none;
 }
 
-video {
+
+video { 
     height: 100vh;
+    object-fit:cover;
     position: absolute;
         left: 0;
         top: 0;
     width: 100vw;
     z-index: -1;
-    object-fit:cover;
 }
 
 
