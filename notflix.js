@@ -5,6 +5,7 @@ let interact = false; //browsers prevent autoplay
 
 function show() {
 
+    /*
     video.style.position = "absolute"; 
     video.style.left = "0";
     video.style.top = "0";
@@ -13,7 +14,8 @@ function show() {
     video.style.objectFit = "cover";
     video.style.width = "100vw";
     video.style.zIndex = "-1";
-
+    */
+   
     video.play();
 }
 
@@ -28,12 +30,12 @@ document.body.addEventListener("click", function() {
 
             show();
 
-        },500);
+        },250);
     }
 
 });
 
-window.addEventListener("mouseover", function() {
+document.body.addEventListener("mouseover", function() {
 
     interact = true;
 
@@ -43,7 +45,7 @@ window.addEventListener("mouseover", function() {
 
             show();
 
-        },500);
+        },250);
     }
 });
 
