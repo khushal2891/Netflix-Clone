@@ -1,6 +1,6 @@
 const video = document.getElementById("video");
 
-let interact = false; //browsers prevent autoplay
+let interact = false; //browser prevents autoplay
 
 
 function show() {
@@ -26,11 +26,7 @@ document.body.addEventListener("click", function() {
     
     if(interact && video.paused) {
 
-        setTimeout(function(){
-
-            show();
-
-        },250);
+        show();
     }
 
 });
@@ -40,20 +36,11 @@ document.body.addEventListener("mouseover", function() {
     interact = true;
 
     if(interact && video.paused) {
-        
-        setTimeout(function(){
 
-            show();
-
-        },250);
+        show();
     }
 });
 
 
-/*
 
-window.onload = function() {
-
-};
-
-*/
+//window.onload = function() {  };
