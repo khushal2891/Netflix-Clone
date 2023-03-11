@@ -29,7 +29,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 500;
-    margin: 15px 20px 15px 0px;
+    margin: 13px 16px 0px 0px;
     height: 56px;
     width: 88px;
 }
@@ -61,10 +61,10 @@ button:hover {
 
 .category h3 {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    letter-spacing: 1.1px;
-    margin-left: 15px;
+    letter-spacing: 1.2px;
+    margin: 0 0 5px 1.5rem;
 }
 
 .fa {
@@ -72,7 +72,6 @@ button:hover {
     display: flex;
         justify-content: center;
     font-size: 1.1rem;
-    margin: 0 15px;
 }
 
 .flex {
@@ -87,7 +86,7 @@ header {
 }
 
 .logo img {
-    margin: 15px 8rem 0px 2.5rem;
+    margin: 12px 8rem 0px 2.5rem;
     width: 140px;
 }
 
@@ -103,17 +102,17 @@ main {
 .menu { 
     align-items: center;
     display: flex;
-        flex-wrap: wrap;
-        gap:32px;
+        flex-wrap:wrap;
+        gap:34px;
         justify-content:space-around;
     font-weight: 500;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.6px;
     width:100%;
 }
 
 .menu li { 
     cursor:pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     list-style: none;
 }
 
@@ -126,7 +125,8 @@ nav {
 .right-nav { 
     align-items: center;
     display: flex;
-        justify-content: center;
+        justify-content:space-evenly;
+    letter-spacing: 0.5px;
     margin-left: auto;
     width: 30%; 
 }
@@ -161,7 +161,7 @@ nav {
 .showcase-title {
     display: flex;
         flex-direction: column;
-    padding-top: 40vh;
+    padding-top: 45vh;
     margin-left: 2.5%;
 }
 
@@ -209,9 +209,9 @@ video {
     .togglebtn {
         display: block;
         font-size: 2rem;
-        margin-top: 5px; 
+        margin-top: 8px; 
         position:absolute;
-            right: 2.5%;
+            right: 2%;
     }
     
 }
