@@ -165,24 +165,6 @@ nav {
     margin-left: 2.5%;
 }
 
-/*
-.showcase-title h1 { 
-    color:transparent;
-    font-size: 2.5rem;
-    background: linear-gradient(90deg, #f32170 ,#be421c , #cf23cf , #cc6b33);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.showcase-title h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-}
-*/
-
 .togglebtn {
     display: none;
 }
@@ -190,7 +172,7 @@ nav {
 
 video { 
     height: 100vh;
-    object-fit:fill;
+    object-fit:cover;
     position: absolute;
         left: 0;
         top: 0;
