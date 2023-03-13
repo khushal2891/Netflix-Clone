@@ -34,4 +34,7 @@ showcase.addEventListener("click", function() {
 });
 
 
-//window.onload = function() {  };
+window.onload = function() { 
+
+    theater();
+ };
