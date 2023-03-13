@@ -36,5 +36,8 @@ showcase.addEventListener("click", function() {
 
 window.onload = function() { 
 
-    theater();
+    setTimeout(function() {
+        theater();
+    },1000);
+    
  };
