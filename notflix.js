@@ -7,6 +7,8 @@ playButton.innerHTML = "Play";
 playIcon.className = "fa fa-play";
 
 
+
+
 function theater() {
    
     if(video.paused) {
@@ -36,8 +38,7 @@ showcase.addEventListener("click", function() {
 
 window.onload = function() { 
 
-    setTimeout(function() {
-        theater();
-    },1500);
+    
+    theater();
     
  };
