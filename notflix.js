@@ -38,6 +38,6 @@ window.onload = function() {
 
     setTimeout(function() {
         theater();
-    },1000);
+    },1500);
     
  };
