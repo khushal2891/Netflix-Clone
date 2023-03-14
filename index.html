@@ -1,206 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="style.css">
-   
-</head>
-<body>
-    <div class="container">
-        <div class="navigation flex ">
-<div class="logo">
-    <img src="netflix_logo.png" alt="logo">
-</div>
-<div class="navbar flex" id="navbar">
-    <div class="left-nav flex">  
-        <ul class="flex menu">
-            <li>Home</li>
-            <li>TV Shows</li>
-            <li>Movies</li>
-            <li>New & Popular</li>
-            <li>My list</li>
-        </ul>
-    </div>
-    
-    <div class="right-nav flex">
-        <span class="fa fa-search fa" aria-hidden="true">
-    <p>
-        khushal
-    </p>
-        </span>
-        <span class="fa fa-bell-o fa" aria-hidden="true">
-            <img src="me.png" alt="">
-        </span>
-        <span class="fa fa-caret-down fa" aria-hidden="true">
-           
-        </span>
-    </div>
-   </div>
-   
-   <span class="togglebtn" onclick="toggle()">&#9776; 
 
-   </span>
-</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="inner">
-    <div class="banner flex">
-    <h3>
-        Marvel Studio's
-    </h3>
-    <h1>Avengers:Endgame</h1>
-    <div class="banner-button flex"><button class="btn active">
-        <span class="fa fa-play play" aria-hidden="true">
-        </span>
-        Play
-    </button>
-    <button class="btn btn1">
-        <span class="fa fa-info-cicle play info" aria-hidden="true">
-        </span>
-       More info
-    </button></div>
-    </div>
-    <div class="carousel">
-       <h1> New Release</h1>
-    </div>
-    
-    <div class="carousel-slider">
-       
-        <div class="carousel-slider box-inner ">
-            <div class="carousel item">
-                <img src="avengers.jpg" width="300px" height="200px" alt="">
-            </div>
-            <div class="carousel item">
-                <img src="captain_america.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="ironman.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="thor.png" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="venom.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="deadpool.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div>
-        </div>
-    </div>
+        <!-- code for favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <!-- Googly fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
-    <div class=" carousel-slider">
-
-        <div class="carousel-slider box-inner ">
-            <div class="carousel item">
-                <img src="venom.jpg" width="300px" height="200px" alt="">
-            </div>
-            <div class="carousel item">
-                <img src="deadpool.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="deadpool.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-slider">
-        
-        <div class="carousel-slider box-inner">
-            <div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div>
-            <div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="ironman.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="thor.png" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="venom.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="deadpool.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class=" carousel-slider">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
-        <div class="carousel-slider box-inner ">
-            <div class="carousel item">
-                <img src="thor.png" width="300px" height="200px" alt="">
-            </div>
-            <div class="carousel item">
-                <img src="captain_america.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="deadpool.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="venom.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="deadpool.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div>
-        </div>
-    </div>
+        <link rel="stylesheet" type="text/css" href="notflix.css">
 
-    <div class="carousel-slider">
-      
-        <div class="carousel-slider box-inner">
-            <div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div>
-            <div class="carousel item">
-                <img src="captain_america.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="ironman.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="thor.png" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="venom.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="deadpool.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="doctor.jpg" width="300px" height="200px" alt="">
-            </div><div class="carousel item">
-                <img src="gaurdian.png" width="300px" height="200px" alt="">
-            </div>
-        </div>
-    </div>
-</div> 
+        <title>Not Netflix</title>
+    </head>
 
-
-    </div>
     
-</div>
-</div>
-<div class="video-container">
-    <div class="color-overlay"></div>
-    <video autoplay loop muted >
-        <source src="avenger_video.mp4" width="300px" height="200px" alt="" >
+    <body onContextMenu="return false">
+        <main>
 
-    </video>
-</div>
-<script src="script.js"></script>
-</body>
+            <header>
+
+                <div class="logo">
+                    <a href="https://github.com/DanCQ">
+                        <img src="assets/logo.png">
+                    </a>
+                </div>
+                
+                <nav>
+                    <div class="flex">  
+                        <ul class="menu">
+                            <li>Home</li>
+                            <li>TV Shows</li>
+                            <li>Movies</li>
+                            <li>New & Popular</li>
+                            <li>My List</li>
+                        </ul>
+                    </div>
+        
+                    <div class="right-nav">
+
+                        <span class="fa fa-search fa"></span>
+                            
+                        <span class="fa fa-bell-o fa"></span>
+                       
+                        <p>Ein</p>
+                        
+                        <a href="https://dany-cervantes-portfolio.pages.dev/">
+                            <img src="assets/data-dog.png">
+                        </a>
+                        
+                        <span class="fa fa-caret-down fa"></span>
+                    </div>
+                </nav>
+       
+                <span class="togglebtn" onclick="toggle()">
+                    &#9776;
+                </span>
+
+            </header>
+
+    
+            <div class="showcase">
+
+                <div class="showcase-title">
+
+                    <img class="showcase-img" src="">
+                    
+                    <div class="flex">
+                        <button>
+                            <i id="play-icon"></i>
+                            <span id="play-button"></span>
+                        </button>
+                        
+                        <button>
+                            More Info
+                        </button>
+                    </div>
+
+                </div>
+            
+            </div>
+
+
+            <div class="catalogue">
+
+                <div class="category">
+                    <h3>New Releases</h3>
+        
+                    <div class="carousel" id="carousel1">
+                       
+                    </div>
+
+                </div>
+
+            
+                <div class="carousel">
+                        
+                    <div class="selection">
+                        <img src="assets/pictures/venom.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/deadpool.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/doctor.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/guardian.png">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/captain.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/avengers.jpg">
+                    </div>
+                </div>
+    
+    
+                <div class="carousel">
+
+                    <div class="selection">
+                        <img src="assets/pictures/thor.png">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/captain.jpg">
+                    </div>
+                    <div class="selection ">
+                        <img src="assets/pictures/avengers.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/doctor.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/venom.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/ironman.jpg">
+                    </div>
+                </div>
+
+
+                <div class="carousel">
+
+                    <div class="selection">
+                        <img src="assets/pictures/ironman.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/venom.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/thor.png">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/guardian.png">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/avengers.jpg">
+                    </div>
+                    <div class="selection">
+                        <img src="assets/pictures/deadpool.jpg">
+                    </div>
+                </div>
+    
+            </div>
+        
+        </main>
+
+
+        <video loop playsinline id="video">
+            <source src="assets/trailers/Knights-Sidonia-1.mp4" type="video/mp4"/>
+        </video>        
+
+
+        <script src="notflix.js"></script>
+
+    </body>
+
 </html>
