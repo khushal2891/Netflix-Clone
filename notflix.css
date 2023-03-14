@@ -44,7 +44,7 @@ button:hover {
     display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-    height: 210px;
+    height: 240px;
     overflow: scroll;
     width: 100%;
 }
@@ -77,6 +77,10 @@ button:hover {
 .flex {
     display: flex;
         flex-wrap: wrap;
+}
+
+figcaption {
+    text-align: center;
 }
 
 header {
@@ -141,6 +145,15 @@ nav {
     cursor:pointer;
 }
 
+figure img {
+    border-radius: 5px;
+    cursor: pointer; 
+    height: 190px;
+    object-fit:fill;
+    padding:0px 0px 0px 10px;
+    width: 300px;
+}
+
 .selection img {
     border-radius: 5px;
     cursor: pointer; 
@@ -164,6 +177,24 @@ nav {
     padding-top: 45vh;
     margin-left: 2.5%;
 }
+
+/*
+.showcase-title h1 { 
+    color:transparent;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #f32170 ,#be421c , #cf23cf , #cc6b33);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.showcase-title h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+*/
 
 .togglebtn {
     display: none;
