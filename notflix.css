@@ -158,7 +158,7 @@ figure img {
     border-radius: 5px;
     cursor: pointer; 
     height: 190px;
-    object-fit:fill;
+    object-fit: fill;
     padding:0px 0px 0px 10px;
     width: 300px;
 }
