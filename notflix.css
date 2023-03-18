@@ -29,7 +29,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 500;
-    margin: 13px 16px 0px 0px;
+    margin: 13px 16px 5px 0px;
     height: 56px;
     width: 88px;
 }
@@ -174,7 +174,7 @@ figure img {
 .showcase-title {
     display: flex;
         flex-direction: column;
-    padding-top: 45vh;
+    padding-top: 50vh;
     margin-left: 2.5%;
 }
 
