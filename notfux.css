@@ -17,7 +17,7 @@ body {
     width: 100%;
 }
 
-main::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -178,28 +178,9 @@ figure img {
     margin-left: 2.5%;
 }
 
-/*
-.showcase-title h1 { 
-    color:transparent;
-    font-size: 2.5rem;
-    background: linear-gradient(90deg, #f32170 ,#be421c , #cf23cf , #cc6b33);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.showcase-title h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-}
-*/
-
 .togglebtn {
     display: none;
 }
-
 
 video { 
     height: 100vh;
@@ -230,14 +211,10 @@ video {
 }
 
 
-@media (max-width:786px) {
+@media (max-width:800px) {
 
     .logo img {
         margin-left: 2rem;
-    }
-
-    .showcase-title h1 {
-        font-size: 2rem;
     }
 
 }
