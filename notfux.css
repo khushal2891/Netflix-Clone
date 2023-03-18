@@ -7,6 +7,14 @@
     -webkit-user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+}
+
 body {
     background-color: black;
     color:white;
@@ -62,7 +70,7 @@ button:hover {
 .category h3 {
     color: white;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1.2px;
     margin: 0 0 5px 1.5rem;
 }
