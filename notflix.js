@@ -11,6 +11,12 @@ const array = [
         img: 'assets/pictures/knights-sidonia.png',
         trailer: 'assets/trailers/knights-sidonia-1.mp4',
         trailer2: 'assets/trailers/knights-sidonia-2.mp4',
+    },
+    {
+        name: "Trigun",
+        logo: `assets/logos/trigun-logo.png`,
+        img: `assets/pictures/trigun.png`,
+        trailer: `assets/trailers/trigun.mp4`
     }
     
 ];
@@ -25,8 +31,6 @@ let playButton = document.getElementById("play-button");
 let playIcon = document.getElementById("play-icon");
 let selection;
 let showcaseImg = document.querySelector(".showcase-img");
-
-
 
 
 function display() {
@@ -81,6 +85,8 @@ function showcaseUI() {
 function theater() {
     
     showcaseImg.src = array[num].logo;
+
+ 
         
     switch(array[num].name) {
         case "Knights Of Sidonia":
