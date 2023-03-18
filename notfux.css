@@ -5,11 +5,12 @@
     user-select: none;
     -webkit-touch-callout:none;
     -webkit-user-select: none;
+    scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
+a { 
     color:white;
+    text-decoration: none;
 }
 
 a:visited {
