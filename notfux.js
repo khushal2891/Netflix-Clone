@@ -1,22 +1,22 @@
 const array = [
     {
-        name: "Avengers: Infinity War",
-        logo: `assets/logos/infinity-logo.png`,
-        img: `assets/pictures/infinity-war.png`,
-        trailer: `assets/trailers/infinity-war.mp4`,
+        name: 'Avengers: Infinity War',
+        logo: 'assets/logos/infinity-logo.png',
+        img: 'assets/pictures/infinity-war.png',
+        trailer: 'assets/trailers/infinity-war.mp4'
     },
     {
-        name: "Knights Of Sidonia",
+        name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
         trailer: 'assets/trailers/knights-sidonia-1.mp4',
-        trailer2: 'assets/trailers/knights-sidonia-2.mp4',
+        trailer2: 'assets/trailers/knights-sidonia-2.mp4'
     },
     {
-        name: "Trigun",
-        logo: `assets/logos/trigun-logo.png`,
-        img: `assets/pictures/trigun.png`,
-        trailer: `assets/trailers/trigun.mp4`
+        name: 'Trigun',
+        logo: 'assets/logos/trigun-logo.png',
+        img: 'assets/pictures/trigun.png',
+        trailer: 'assets/trailers/trigun.mp4',
     }
     
 ];
@@ -85,8 +85,6 @@ function showcaseUI() {
 function theater() {
     
     showcaseImg.src = array[num].logo;
-
- 
         
     switch(array[num].name) {
         case "Knights Of Sidonia":
@@ -127,6 +125,7 @@ window.onload = function() {
     for(let i = 0; i < selection.length; i++) {
 
         selection[i].addEventListener("click", function() {
+
             num = i;
             theater();
             showcaseUI();
