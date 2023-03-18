@@ -3,14 +3,14 @@ const array = [
         name: "Avengers: Infinity War",
         logo: `assets/logos/infinity-logo.png`,
         img: `assets/pictures/infinity-war.png`,
-        trailer: `assets/trailers/avengers-endgame.mp4`,
+        trailer: `assets/trailers/infinity-war.mp4`,
     },
     {
         name: "Knights Of Sidonia",
-        logo: 'assets/logos/Sidonia-logo.png',
-        img: 'assets/pictures/Knights-Sidonia.png',
-        trailer: 'assets/trailers/Knights-Sidonia-1.mp4',
-        trailer2: 'assets/trailers/Knights-Sidonia-2.mp4',
+        logo: 'assets/logos/sidonia-logo.png',
+        img: 'assets/pictures/knights-sidonia.png',
+        trailer: 'assets/trailers/knights-sidonia-1.mp4',
+        trailer2: 'assets/trailers/knights-sidonia-2.mp4',
     }
     
 ];
@@ -27,23 +27,7 @@ let selection;
 let showcaseImg = document.querySelector(".showcase-img");
 
 
-function buttonUI() {
-   
-    if(video.paused) {
 
-        video.play();
-
-        playButton.innerHTML = "Pause";
-        playIcon.className = "fa fa-pause";
-
-    } else {
-
-        video.pause();
-
-        playButton.innerHTML = "Play";
-        playIcon.className = "fa fa-play";
-    }
-}
 
 function display() {
 
@@ -72,6 +56,25 @@ function randomRange(min,max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 //Math.floor() rounds down to the nearest whole number  e.i. 10 = 0 - 9  
 //Math.random() returns a random decimal between 0 - 0.99
+}
+
+
+function showcaseUI() {
+   
+    if(video.paused) {
+
+        video.play();
+
+        playButton.innerHTML = "Pause";
+        playIcon.className = "fa fa-pause";
+
+    } else {
+
+        video.pause();
+
+        playButton.innerHTML = "Play";
+        playIcon.className = "fa fa-play";
+    }
 }
 
 
@@ -105,7 +108,7 @@ function theater() {
 
 showcase.addEventListener("click", function() {
 
-    buttonUI();
+    showcaseUI();
 });
 
 
@@ -120,7 +123,7 @@ window.onload = function() {
         selection[i].addEventListener("click", function() {
             num = i;
             theater();
-            buttonUI();
+            showcaseUI();
         });
     };
 
