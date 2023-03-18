@@ -39,15 +39,20 @@ function display() {
     playIcon.className = "fa fa-play";
 
     array.forEach(obj => {
+        let anchor = document.createElement("a");
         let figure = document.createElement("figure"); 
-        figure.classList.add("selection");
+        let figCaption = document.createElement("figcaption"); 
         let img = new Image();
+
+        anchor.href = "#top"; 
         img.src = obj.img;
+        figCaption.innerHTML = obj.name;
+        figure.classList.add("selection");
+        
+        anchor.appendChild(figure);
         figure.appendChild(img);
-        let figName = document.createElement("figcaption");
-        figName.innerHTML = obj.name;
-        figure.appendChild(figName);
-        carousel1.appendChild(figure);
+        figure.appendChild(figCaption);
+        carousel1.appendChild(anchor);
     });
 
     selection = document.querySelectorAll(".selection");
