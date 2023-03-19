@@ -6,6 +6,12 @@ const array = [
         trailer: ['assets/trailers/infinity-war.mp4']
     },
     {
+        name: 'Cowboy Bebop',
+        logo: 'assets/logos/bebop-logo.png',
+        img: 'assets/pictures/cowboy-bebop.jpg',
+        trailer: ['assets/trailers/four-cowboys.mov']
+    },
+    {
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
