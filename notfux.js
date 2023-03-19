@@ -50,7 +50,7 @@ function display() {
         let figCaption = document.createElement("figcaption"); 
         let img = new Image();
 
-        anchor.href = "#top"; 
+        anchor.href = "#trailer"; 
         img.src = obj.img;
         figCaption.innerHTML = obj.name;
         figure.classList.add("selection");
