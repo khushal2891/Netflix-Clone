@@ -32,6 +32,7 @@ let selection;
 let showcaseImg = document.querySelector(".showcase-img");
 
 
+//creates objects in webpage from array
 function display() {
 
     playButton.innerHTML = "Play";
@@ -66,6 +67,7 @@ function randomRange(min,max) {
 }
 
 
+//plays, pauses, video & button
 function showcaseUI() {
    
     if(video.paused) {
@@ -88,6 +90,8 @@ function showcaseUI() {
 function theater() {
     
     showcaseImg.src = array[num].logo;
+
+    //allows for multiple object array trailers to randomly play
     video.src = array[num].trailer[randomRange(0, array[num].trailer.length - 1)];
 }
 
@@ -103,7 +107,7 @@ window.onload = function() {
     display();
     theater();
 
-    //Took two days, after a 9-5,to figure this out
+    //only works after array objects are created onload
     for(let i = 0; i < selection.length; i++) {
 
         selection[i].addEventListener("click", function() {
@@ -113,5 +117,5 @@ window.onload = function() {
             showcaseUI();
         });
     };
-    
+
  };
