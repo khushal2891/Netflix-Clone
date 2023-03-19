@@ -14,6 +14,13 @@ const array = [
         genre: ['action', 'anime', 'series']
     },
     {
+        name: 'Ghost In The Shell: Stand Alone Complex',
+        logo: 'assets/logos/ghost-shell-logo.png',
+        img: 'assets/pictures/ghost-in-the-shell.png',
+        trailer: ['assets/trailers/ghost-first-gig.mp4', 'assets/trailers/ghost-second-gig.mp4'],
+        genre: ['action', 'anime', 'series']
+    },
+    {
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
