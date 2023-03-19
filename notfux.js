@@ -3,20 +3,19 @@ const array = [
         name: 'Avengers: Infinity War',
         logo: 'assets/logos/infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
-        trailer: 'assets/trailers/infinity-war.mp4'
+        trailer: ['assets/trailers/infinity-war.mp4']
     },
     {
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
-        trailer: 'assets/trailers/knights-sidonia-1.mp4',
-        trailer2: 'assets/trailers/knights-sidonia-2.mp4'
+        trailer: ['assets/trailers/knights-sidonia-1.mp4', 'assets/trailers/knights-sidonia-2.mp4']
     },
     {
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.png',
-        trailer: 'assets/trailers/trigun.mp4',
+        trailer: ['assets/trailers/trigun.mp4']
     }
     
 ];
@@ -56,7 +55,6 @@ function display() {
     });
 
     selection = document.querySelectorAll(".selection");
-
 }
 
 
@@ -90,28 +88,7 @@ function showcaseUI() {
 function theater() {
     
     showcaseImg.src = array[num].logo;
-        
-    switch(array[num].name) {
-        case "Knights Of Sidonia":
-            flip();
-            break;
-        default:
-            video.src = array[num].trailer;
-            break;
-    }
-
-    function flip() {
-
-        let coin = randomRange(1,2);
-        
-        if(coin == 1) {
-
-            video.src = array[num].trailer;
-        } else {
-            video.src = array[num].trailer2;
-        };
-    };
-
+    video.src = array[num].trailer[randomRange(0, array[num].trailer.length - 1)];
 }
 
 
@@ -136,5 +113,5 @@ window.onload = function() {
             showcaseUI();
         });
     };
-
+    
  };
