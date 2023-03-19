@@ -195,6 +195,8 @@ figure img {
 }
 
 .showcase-img {
+    height: 54px;
+    object-fit: fill;
     width: 180px;
 }
 
