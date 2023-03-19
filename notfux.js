@@ -10,7 +10,7 @@ const array = [
         name: 'Cowboy Bebop',
         logo: 'assets/logos/bebop-logo.png',
         img: 'assets/pictures/cowboy-bebop.jpg',
-        trailer: ['assets/trailers/four-cowboys.mov', 'assets/trailers/bang.mov', 'assets/trailers/one-crew.mov'],
+        trailer: ['assets/trailers/bebop-four.mov', 'assets/trailers/bebop-bang.mov', 'assets/trailers/bebop-one.mov', 'assets/trailers/bebop-bass.mov'],
         genre: ['action', 'anime', 'series']
     },
     {
