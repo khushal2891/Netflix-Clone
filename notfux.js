@@ -3,25 +3,29 @@ const array = [
         name: 'Avengers: Infinity War',
         logo: 'assets/logos/infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
-        trailer: ['assets/trailers/infinity-war.mp4']
+        trailer: ['assets/trailers/infinity-war.mp4'],
+        genre: ['action', 'movie', 'marvel']
     },
     {
         name: 'Cowboy Bebop',
         logo: 'assets/logos/bebop-logo.png',
         img: 'assets/pictures/cowboy-bebop.jpg',
-        trailer: ['assets/trailers/four-cowboys.mov']
+        trailer: ['assets/trailers/four-cowboys.mov', 'assets/trailers/bang.mov', 'assets/trailers/one-crew.mov'],
+        genre: ['action', 'anime', 'series']
     },
     {
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
-        trailer: ['assets/trailers/knights-sidonia-1.mp4', 'assets/trailers/knights-sidonia-2.mp4']
+        trailer: ['assets/trailers/knights-sidonia-1.mp4', 'assets/trailers/knights-sidonia-2.mp4'],
+        genre: ['action', 'anime', 'series']
     },
     {
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.png',
-        trailer: ['assets/trailers/trigun.mp4']
+        trailer: ['assets/trailers/trigun.mp4'],
+        genre: ['action', 'anime', 'series']
     }
     
 ];
