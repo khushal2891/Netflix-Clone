@@ -172,21 +172,12 @@ nav {
     cursor:pointer;
 }
 
-figure img {
-    border-radius: 5px;
-    cursor: pointer; 
-    height: 190px;
-    object-fit:fill;
-    padding:0px 0px 0px 10px;
-    width: 300px;
-}
-
 .selection img {
     border-radius: 5px;
     cursor: pointer; 
     height: 180px;
     object-fit: fill;
-    padding:0px 0px 0px 10px;
+    margin-left:10px;
     width: 285px;
 }
 
