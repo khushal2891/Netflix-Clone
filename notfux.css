@@ -170,6 +170,10 @@ nav {
     width: 50px;
 }
 
+.right-nav p {
+    text-shadow: 0 0 0.5px ghostwhite;
+}
+
 .right-nav span {
     cursor:pointer;
 }
