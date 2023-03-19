@@ -136,6 +136,23 @@ nav {
     width: 85%;
 }
 
+#play-icon {
+    font-size: 16px;
+    padding-top:4px;
+}
+
+#play-button {
+    padding-top:4px;
+}
+
+.plus {
+    font-size: 28px;
+    font-weight:bolder;
+    padding-bottom:0;
+    margin-top:-3px;
+    margin-bottom:-3.5px;
+}
+
 .right-nav { 
     align-items: center;
     display: flex;
