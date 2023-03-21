@@ -107,7 +107,7 @@ function showcaseUI() {
 function theater() {
     
     showcaseImg.src = array[num].logo;
-    showcaseImg.style.height = '57px';
+    showcaseImg.style.height = '54px';
 
     //allows for multiple object array trailers to randomly play
     video.src = array[num].trailer[randomRange(0, array[num].trailer.length - 1)];
