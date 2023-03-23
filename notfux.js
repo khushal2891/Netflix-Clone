@@ -28,6 +28,13 @@ const array = [
         genre: ['action', 'anime', 'series']
     },
     {
+        name: 'Samurai Champloo',
+        logo: 'assets/logos/champloo-logo.png',
+        img: 'assets/pictures/samurai-champloo.jpg',
+        trailer: ['assets/trailers/samurai-champloo.mp4'],
+        genre: ['action', 'anime', 'series']
+    },
+    {
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.png',
