@@ -73,10 +73,10 @@ function display() {
         figCaption.textContent = obj.name;
         figure.classList.add("selection");
         
-        anchor.appendChild(figure);
-        figure.appendChild(img);
-        figure.appendChild(figCaption);
-        carousel1.appendChild(anchor);
+        anchor.append(figure);
+        figure.append(img);
+        figure.append(figCaption);
+        carousel1.append(anchor);
     });
 
     selection = document.querySelectorAll(".selection");
