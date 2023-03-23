@@ -59,7 +59,7 @@ let showcaseImg = document.querySelector(".showcase-img");
 //creates objects in webpage from array
 function display() {
 
-    playButton.innerHTML = "Play";
+    playButton.textContent = "Play";
     playIcon.className = "fa fa-play";
 
     array.forEach(obj => {
@@ -70,7 +70,7 @@ function display() {
 
         anchor.href = "#trailer"; 
         img.src = obj.img;
-        figCaption.innerHTML = obj.name;
+        figCaption.textContent = obj.name;
         figure.classList.add("selection");
         
         anchor.appendChild(figure);
@@ -98,14 +98,14 @@ function showcaseUI() {
 
         video.play();
 
-        playButton.innerHTML = "Pause";
+        playButton.textContent = "Pause";
         playIcon.className = "fa fa-pause";
 
     } else {
 
         video.pause();
 
-        playButton.innerHTML = "Play";
+        playButton.textContent = "Play";
         playIcon.className = "fa fa-play";
     }
 }
