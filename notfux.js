@@ -28,6 +28,20 @@ const array = [
         genre: ['anime', 'series']
     },
     {
+        name: 'Deadpool',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/deadpool.jpg',
+        trailer: [],
+        genre: ['movies']
+    },
+    {
+        name: 'Doctor Strange',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/doctor-strange.png',
+        trailer: [],
+        genre: ['movies']
+    },
+    {
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
