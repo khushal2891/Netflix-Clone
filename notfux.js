@@ -14,6 +14,13 @@ const array = [
         genre: ['movies']
     },
     {
+        name: 'Captain America: Civil War',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/captain-civil-war.jpg',
+        trailer: [],
+        genre: ['movies']
+    },
+    {
         name: 'Cowboy Bebop',
         logo: 'assets/logos/bebop-logo.png',
         img: 'assets/pictures/cowboy-bebop.jpg',
