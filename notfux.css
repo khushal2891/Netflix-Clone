@@ -132,6 +132,10 @@ main {
     list-style: none;
 }
 
+.menu li:active, .menu li:hover {
+    text-shadow: 0 0 2px ghostwhite;
+}
+
 nav { 
     display: flex;
         flex-wrap: wrap;
