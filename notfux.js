@@ -1,45 +1,52 @@
 const array = [
     {
+        name: 'Avengers: Endgame',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/avengers-endgame.png',
+        trailer: [],
+        genre: ['movies']
+    },
+    {
         name: 'Avengers: Infinity War',
         logo: 'assets/logos/infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
         trailer: ['assets/trailers/infinity-war.mp4'],
-        genre: ['action', 'movie', 'marvel']
+        genre: ['movies']
     },
     {
         name: 'Cowboy Bebop',
         logo: 'assets/logos/bebop-logo.png',
         img: 'assets/pictures/cowboy-bebop.jpg',
         trailer: ['assets/trailers/bebop-four.mov', 'assets/trailers/bebop-bang.mov', 'assets/trailers/bebop-one.mov', 'assets/trailers/bebop-bass.mov'],
-        genre: ['action', 'anime', 'series']
+        genre: ['anime', 'series']
     },
     {
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
         trailer: ['assets/trailers/ghost-first-gig.mp4', 'assets/trailers/ghost-second-gig.mp4'],
-        genre: ['action', 'anime', 'series']
+        genre: ['anime', 'series']
     },
     {
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
         trailer: ['assets/trailers/knights-sidonia-1.mp4', 'assets/trailers/knights-sidonia-2.mp4'],
-        genre: ['action', 'anime', 'series']
+        genre: ['anime', 'series']
     },
     {
         name: 'Samurai Champloo',
         logo: 'assets/logos/champloo-logo.png',
         img: 'assets/pictures/samurai-champloo.jpg',
         trailer: ['assets/trailers/samurai-champloo.mp4'],
-        genre: ['action', 'anime', 'series']
+        genre: ['anime', 'series']
     },
     {
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.png',
         trailer: ['assets/trailers/trigun.mp4'],
-        genre: ['action', 'anime', 'series']
+        genre: ['anime', 'series']
     }
     
 ];
@@ -48,7 +55,7 @@ const catalogue = document.querySelector(".catalogue");
 const showcase = document.querySelector(".showcase");
 const video = document.getElementById("video");
 
-let carousel1 = document.getElementById("carousel1");
+let genre = ['anime', 'originals', 'movies', 'series', 'watchlist'];
 let num = randomRange(0, array.length - 1); //sets random number within array size
 let playButton = document.getElementById("play-button");
 let playIcon = document.getElementById("play-icon");
@@ -62,24 +69,54 @@ function display() {
     playButton.textContent = "Play";
     playIcon.className = "fa fa-play";
 
-    array.forEach(obj => {
-        let anchor = document.createElement("a");
-        let figure = document.createElement("figure"); 
-        let figCaption = document.createElement("figcaption"); 
-        let img = new Image();
+    for(let i = 0; i < genre.length; i++) {
 
-        anchor.href = "#trailer"; 
-        img.src = obj.img;
-        figCaption.textContent = obj.name;
-        figure.classList.add("selection");
+        let outer = document.createElement("div");
+        outer.classList.add("category");
+
+        let h3 = document.createElement("h3");
+        h3.textContent = genre[i][0].toUpperCase() + genre[i].slice(1);
+        h3.id = genre[i];
+
+        let inner = document.createElement("div");
+        inner.classList.add("carousel");
+    
+        outer.append(h3);
+        outer.append(inner);
+        catalogue.append(outer);
         
-        anchor.append(figure);
-        figure.append(img);
-        figure.append(figCaption);
-        carousel1.append(anchor);
-    });
+
+        array.forEach(obj => {
+
+            let anchor = document.createElement("a");
+            anchor.href = "#trailer"; 
+
+            let figure = document.createElement("figure"); 
+            figure.classList.add("selection");
+
+            let figCaption = document.createElement("figcaption"); 
+            figCaption.textContent = obj.name;
+
+            let img = new Image();
+            img.src = obj.img;
+
+            for(let j = 0; j < obj.genre.length; j++) {
+           
+                if(obj.genre[j] == genre[i]) {
+                    inner.append(anchor);
+                }
+            }
+
+            anchor.append(figure);
+            figure.append(img);
+            figure.append(figCaption);
+            
+        });
+
+    }
 
     selection = document.querySelectorAll(".selection");
+
 }
 
 
@@ -132,15 +169,24 @@ window.onload = function() {
     display();
     theater();
 
+
     //only works after array objects are created onload
     for(let i = 0; i < selection.length; i++) {
 
         selection[i].addEventListener("click", function() {
 
-            num = i;
-            theater();
-            showcaseUI();
+            for(let j = 0; j < array.length; j++) {
+
+                //Looks to match selection children elements array-- FigCaption name
+                if(array[j].name == selection[i].children[1].textContent) {
+                    
+                    num = j;
+                    theater();
+                    showcaseUI();
+                }
+            }
         });
+
     };
 
  };
