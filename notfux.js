@@ -49,6 +49,20 @@ const array = [
         genre: ['anime', 'series']
     },
     {
+        name: 'Guardians Of The Galaxy',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/guardians-of-the-galaxy.jpg',
+        trailer: [],
+        genre: ['movies']
+    },
+    {
+        name: 'Iron Man',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/iron-man.jpg',
+        trailer: [],
+        genre: ['movies']
+    },
+    {
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
@@ -61,6 +75,13 @@ const array = [
         img: 'assets/pictures/samurai-champloo.jpg',
         trailer: ['assets/trailers/samurai-champloo.mp4'],
         genre: ['anime', 'series']
+    },
+    {
+        name: 'Thor: Love And Thunder',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/thor-love-thunder.png',
+        trailer: [],
+        genre: ['movies']
     },
     {
         name: 'Trigun',
