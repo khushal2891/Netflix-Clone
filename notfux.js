@@ -89,6 +89,13 @@ const array = [
         img: 'assets/pictures/trigun.png',
         trailer: ['assets/trailers/trigun.mp4'],
         genre: ['anime', 'series']
+    },
+    {
+        name: 'Venom',
+        logo: 'assets/logo.png',
+        img: 'assets/pictures/venom.jpg',
+        trailer: [],
+        genre: ['movies']
     }
     
 ];
