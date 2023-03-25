@@ -67,7 +67,7 @@ const array = [
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
         trailer: ['assets/trailers/knights-sidonia-1.mp4', 'assets/trailers/knights-sidonia-2.mp4'],
-        genre: ['anime', 'series']
+        genre: ['anime', 'originals', 'series']
     },
     {
         name: 'Samurai Champloo',
