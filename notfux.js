@@ -101,6 +101,7 @@ const array = [
 ];
 
 const catalogue = document.querySelector(".catalogue");
+const watchList = document.getElementById("list");
 const showcase = document.querySelector(".showcase");
 const video = document.getElementById("video");
 
@@ -154,17 +155,16 @@ function display() {
                 if(obj.genre[j] == genre[i]) {
                     inner.append(anchor);
                 }
+
             }
 
             anchor.append(figure);
             figure.append(img);
             figure.append(figCaption);
-            
+
         });
 
     }
-
-    selection = document.querySelectorAll(".selection");
 
 }
 
@@ -174,6 +174,32 @@ function randomRange(min,max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 //Math.floor() rounds down to the nearest whole number  e.i. 10 = 0 - 9  
 //Math.random() returns a random decimal between 0 - 0.99
+}
+
+
+//arranges array length
+function arrange() {
+
+    //refreshes array length
+    selection = document.querySelectorAll(".selection");
+    
+    for(let i = 0; i < selection.length; i++) {
+
+        selection[i].addEventListener("click", function() {
+
+            for(let j = 0; j < array.length; j++) {
+
+                //Looks to match selection children elements array-- figCaption name
+                if(array[j].name == selection[i].children[1].textContent) {
+                    
+                    num = j;
+                    theater();
+                    showcaseUI();
+                }
+            }
+        });
+
+    };
 }
 
 
@@ -213,29 +239,46 @@ showcase.addEventListener("click", function() {
 });
 
 
+//add item to user watchlist
+watchList.addEventListener("click", function() {
+
+    video.play(); //always triggers pause when showcaseUI() runs
+    
+    let anchor = document.createElement("a");
+    anchor.href = "#trailer"; 
+    
+    let figure = document.createElement("figure"); 
+    figure.classList.add("selection");
+
+    let figCaption = document.createElement("figcaption"); 
+    figCaption.textContent = array[num].name;
+
+    let img = new Image();
+    img.src = array[num].img;
+    
+    anchor.append(figure);
+    figure.append(img);
+    figure.append(figCaption);
+    
+    for(let h = 0; h < catalogue.children.length; h++) {
+
+        if(catalogue.children[h].children[0].textContent == "Watchlist") {
+
+            //appends item at the beginning of the list
+            catalogue.children[h].children[1].insertBefore(anchor, catalogue.children[h].children[1].children[0]);
+        }
+
+    };
+
+    arrange();
+
+});
+
+
 window.onload = function() { 
 
     display();
     theater();
+    arrange();
 
-
-    //only works after array objects are created onload
-    for(let i = 0; i < selection.length; i++) {
-
-        selection[i].addEventListener("click", function() {
-
-            for(let j = 0; j < array.length; j++) {
-
-                //Looks to match selection children elements array-- FigCaption name
-                if(array[j].name == selection[i].children[1].textContent) {
-                    
-                    num = j;
-                    theater();
-                    showcaseUI();
-                }
-            }
-        });
-
-    };
-
- };
+};
