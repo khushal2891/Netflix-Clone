@@ -91,6 +91,7 @@ button:hover {
 
 figcaption {
     font-weight: 500;
+    max-width: 290px;
     text-align: center;
     text-shadow: 0 0 0.5px ghostwhite;
 }
