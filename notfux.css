@@ -39,7 +39,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 500;
-    margin: 13px 16px 10px 0px;
+    margin: 13px 16px 12px 0px;
     height: 52px;
     width: 88px;
 }
@@ -211,7 +211,7 @@ nav {
 .showcase-title {
     display: flex;
         flex-direction: column;
-    padding-top: 52.5vh;
+    padding-top: 52vh;
     margin-left: 2.5%;
 }
 
