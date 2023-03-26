@@ -192,7 +192,7 @@ nav {
     width: 280px;
 }
 
-.selection img:hover {
+.selection img:active, .selection img:hover {
     border: solid ghostwhite 2px;
     transition: ease-in-out;
     transition-duration: 1.1s;
@@ -211,7 +211,7 @@ nav {
 .showcase-title {
     display: flex;
         flex-direction: column;
-    padding-top: 53vh;
+    padding-top: 53.5vh;
     margin-left: 2.5%;
 }
 
