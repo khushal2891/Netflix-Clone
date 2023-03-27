@@ -256,6 +256,10 @@ video {
 
 @media (max-width:1000px) {
 
+    .fa-bell-o {
+        display: none;
+    }
+
     .logo img { 
         margin-right: 4rem;
     }
