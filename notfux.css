@@ -267,7 +267,7 @@ video {
     .menu { 
         display: flex;
             gap:28px;
-            letter-spacing: 0.5px;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -280,7 +280,7 @@ video {
     .menu { 
         display: flex;
             gap:26px;
-            letter-spacing: 0.4px;
+        letter-spacing: 0.4px;
     }
 }
 
