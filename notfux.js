@@ -100,17 +100,17 @@ const array = [
     
 ];
 
-const catalogue = document.querySelector(".catalogue");
-const watchList = document.getElementById("list");
-const showcase = document.querySelector(".showcase");
-const video = document.getElementById("video");
+const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
+const showcase = document.querySelector(".showcase"); //background where video displays
+const video = document.getElementById("video"); 
+const watchList = document.getElementById("list"); //used to identify watchlist carousel
 
-let genre = ['anime', 'originals', 'movies', 'series', 'watchlist'];
+let genre = ['anime', 'originals', 'movies', 'series', 'watchlist']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
-let playButton = document.getElementById("play-button");
-let playIcon = document.getElementById("play-icon");
-let selection;
-let showcaseImg = document.querySelector(".showcase-img");
+let playButton = document.getElementById("play-button"); //play || pause
+let playIcon = document.getElementById("play-icon"); //play || pause --icon
+let selection; //will hold array of class selection items
+let showcaseImg = document.querySelector(".showcase-img"); //for video title logos
 
 
 //creates objects in webpage from array
