@@ -102,7 +102,7 @@ header {
     width: 100%;
 }
 
-.logo img {
+.logo img { 
     margin: 12px 8rem 0px 2.5rem;
     width: 140px;
 }
@@ -120,7 +120,7 @@ main {
     align-items: center;
     display: flex;
         flex-wrap:wrap;
-        gap:34px;
+        gap:36px;
         justify-content:space-around;
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -230,11 +230,60 @@ video {
 }
 
 
-@media (max-width:1150px) {
+@media (max-width:1200px) {
+
+    .logo img { 
+        margin-right: 7rem;
+    }
+
+    .menu { 
+        display: flex;
+            gap:34px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    .logo img { 
+        margin-right: 5.5rem;
+    }
+
+    .menu { 
+        display: flex;
+            gap:33px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .logo img { 
+        margin-right: 4rem;
+    }
+
+    .menu { 
+        display: flex;
+            gap:28px;
+            letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width:925px) {
+
+    .logo img { 
+        margin-right: 2.5rem;
+    }
+
+    .menu { 
+        display: flex;
+            gap:26px;
+            letter-spacing: 0.4px;
+    }
+}
+
+@media (max-width:875px) {
 
     nav {
         display: none;
-        width: 100%;
     }
 
     .togglebtn {
@@ -244,14 +293,4 @@ video {
         position:absolute;
             right: 2%;
     }
-    
-}
-
-
-@media (max-width:800px) {
-
-    .logo img {
-        margin-left: 2rem;
-    }
-
 }
