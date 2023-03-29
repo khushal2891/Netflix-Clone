@@ -87,7 +87,7 @@ const array = [
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.png',
-        trailer: ['assets/trailers/trigun.mp4'],
+        trailer: ['assets/trailers/trigun.mp4', 'assets/trailers/trigun-credits.mp4'],
         genre: ['anime', 'series']
     },
     {
@@ -105,7 +105,7 @@ const showcase = document.querySelector(".showcase"); //background where video d
 const video = document.getElementById("video"); 
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
 
-let genre = ['anime', 'originals', 'movies', 'series', 'watchlist']; //used to create carousel genres 
+let genre = ['suggested', 'originals', 'movies', 'series', 'watchlist']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
 let playButton = document.getElementById("play-button"); //play || pause
 let playIcon = document.getElementById("play-icon"); //play || pause --icon
@@ -136,7 +136,7 @@ function display() {
         catalogue.append(outer);
         
 
-        array.forEach(obj => {
+        array.forEach(obj => { 
 
             let anchor = document.createElement("a");
             anchor.href = "#trailer"; 
@@ -149,6 +149,11 @@ function display() {
 
             let img = new Image();
             img.src = obj.img;
+
+            //genre added to obj if trailer exists
+            if(obj.trailer.length > 0) {
+                obj.genre.push("suggested");
+            }
 
             for(let j = 0; j < obj.genre.length; j++) {
            
@@ -200,6 +205,7 @@ function arrange() {
         });
 
     };
+    
 }
 
 
