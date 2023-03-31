@@ -100,6 +100,8 @@ const array = [
     
 ];
 
+const caret = document.querySelector(".fa-caret-down");
+const toggle = document.querySelector(".togglebtn");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
 const showcase = document.querySelector(".showcase"); //background where video displays
 const video = document.getElementById("video"); 
@@ -209,6 +211,39 @@ function arrange() {
 }
 
 
+function fullscreen() {
+
+    if (document.fullscreenElement) { // if currently in full screen mode
+        
+        if (document.exitFullscreen) {
+            document.exitFullscreen(); // Exit full screen mode
+        } else if (document.mozCancelFullScreen) { /* Firefox */
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) { /* Chrome, Safari & Opera */
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { /* IE/Edge */
+        document.msExitFullscreen();
+        }
+    
+    } else { // Not in full screen mode
+        
+        const elem = document.documentElement; // Get the document element      
+    
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen(); // Make the website go full screen
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+        
+    }
+   
+}
+
+
 //plays, pauses, video & button
 function showcaseUI() {
    
@@ -238,6 +273,16 @@ function theater() {
     video.src = array[num].trailer[randomRange(0, array[num].trailer.length - 1)];
 }
 
+
+caret.addEventListener("click", function() {
+
+    fullscreen();
+});
+
+toggle.addEventListener("click", function() {
+
+    fullscreen();
+});
 
 showcase.addEventListener("click", function() {
 
