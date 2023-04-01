@@ -10,7 +10,10 @@ const array = [
         name: 'Avengers: Infinity War',
         logo: 'assets/logos/avengers-infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
-        trailer: ['assets/trailers/avengers-infinity-war.mp4', 'assets/trailers/avengers-infinity-war-2.mp4'],
+        trailer: [
+            'assets/trailers/avengers-infinity-war.mp4', 
+            'assets/trailers/avengers-infinity-war-2.mp4'
+            ],
         genre: ['movies']
     },
     {
@@ -24,7 +27,13 @@ const array = [
         name: 'Cowboy Bebop',
         logo: 'assets/logos/bebop-logo.png',
         img: 'assets/pictures/cowboy-bebop.jpg',
-        trailer: ['assets/trailers/cowboy-bebop-opening.mp4', 'assets/trailers/bebop-four.mov', 'assets/trailers/bebop-bang.mov', 'assets/trailers/bebop-one.mov', 'assets/trailers/bebop-bass.mov'],
+        trailer: [
+            'assets/trailers/cowboy-bebop-opening.mp4', 
+            'assets/trailers/bebop-four.mov', 
+            'assets/trailers/bebop-bang.mov', 
+            'assets/trailers/bebop-one.mov', 
+            'assets/trailers/bebop-bass.mov'
+            ],
         genre: ['anime', 'series']
     },
     {
@@ -45,7 +54,10 @@ const array = [
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
-        trailer: ['assets/trailers/ghost-first-gig.mp4', 'assets/trailers/ghost-second-gig.mp4'],
+        trailer: [
+            'assets/trailers/ghost-first-gig.mp4', 
+            'assets/trailers/ghost-second-gig.mp4'
+        ],
         genre: ['anime', 'series']
     },
     {
@@ -66,7 +78,10 @@ const array = [
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-sidonia.png',
-        trailer: ['assets/trailers/knights-sidonia-1.mp4', 'assets/trailers/knights-sidonia-2.mp4'],
+        trailer: [
+            'assets/trailers/knights-sidonia-1.mp4', 
+            'assets/trailers/knights-sidonia-2.mp4'
+            ],
         genre: ['anime', 'originals', 'series']
     },
     {
@@ -87,7 +102,10 @@ const array = [
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.png',
-        trailer: ['assets/trailers/trigun.mp4', 'assets/trailers/trigun-credits.mp4'],
+        trailer: [
+            'assets/trailers/trigun.mp4', 
+            'assets/trailers/trigun-credits.mp4'
+            ],
         genre: ['anime', 'series']
     },
     {
@@ -101,7 +119,12 @@ const array = [
         name: 'The Witcher 3: Wild Hunt',
         logo: 'assets/logos/witcher-logo.png',
         img: 'assets/pictures/witcher3.png',
-        trailer: ['assets/trailers/witcher-game-of-year.mp4' , 'assets/trailers/witcher-hearts-of-stone.mp4', 'assets/trailers/witcher-legend.mp4', 'assets/trailers/witcher-nextgen.mp4'],
+        trailer: [
+            'assets/trailers/witcher-game-of-year.mp4' ,
+            'assets/trailers/witcher-hearts-of-stone.mp4', 
+            'assets/trailers/witcher-legend.mp4', 
+            'assets/trailers/witcher-nextgen.mp4'
+            ],
         genre: ['games']
     }
     
