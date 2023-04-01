@@ -1,14 +1,14 @@
 const array = [
     {
         name: 'Avengers: Endgame',
-        logo: 'assets/logo.png',
+        logo: 'assets/logos/avengers-endgame-logo.png',
         img: 'assets/pictures/avengers-endgame.png',
-        trailer: [],
+        trailer: ['assets/trailers/avengers-endgame-1.mp4'],
         genre: ['movies']
     },
     {
         name: 'Avengers: Infinity War',
-        logo: 'assets/logos/infinity-logo.png',
+        logo: 'assets/logos/avengers-infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
         trailer: ['assets/trailers/avengers-infinity-war.mp4', 'assets/trailers/avengers-infinity-war-2.mp4'],
         genre: ['movies']
