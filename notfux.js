@@ -138,7 +138,7 @@ const showcase = document.querySelector(".showcase"); //background where video d
 const video = document.getElementById("video"); 
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
 
-let genre = ['series', 'movies', 'games', 'originals', 'watchlist']; //used to create carousel genres 
+let genre = ['originals', 'movies', 'series', 'games', 'watchlist']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
 let playButton = document.getElementById("play-button"); //play || pause
 let playIcon = document.getElementById("play-icon"); //play || pause --icon
