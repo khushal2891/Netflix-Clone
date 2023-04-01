@@ -101,7 +101,7 @@ const array = [
         name: 'The Witcher 3: Wild Hunt',
         logo: 'assets/logos/witcher-logo.png',
         img: 'assets/pictures/witcher3.png',
-        trailer: ['assets/trailers/witcher-hearts-of-stone.mp4', 'assets/trailers/witcher-legend.mp4', 'assets/trailers/witcher-nextgen.mp4'],
+        trailer: ['assets/trailers/witcher-game-of-year.mp4' , 'assets/trailers/witcher-hearts-of-stone.mp4', 'assets/trailers/witcher-legend.mp4', 'assets/trailers/witcher-nextgen.mp4'],
         genre: ['games']
     }
     
