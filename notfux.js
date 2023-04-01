@@ -96,6 +96,13 @@ const array = [
         img: 'assets/pictures/venom.jpg',
         trailer: [],
         genre: ['movies']
+    },
+    {
+        name: 'The Witcher 3: Wild Hunt',
+        logo: 'assets/logos/witcher-logo.png',
+        img: 'assets/pictures/witcher3.png',
+        trailer: ['assets/trailers/witcher-legend.mp4'],
+        genre: ['games']
     }
     
 ];
@@ -107,7 +114,7 @@ const showcase = document.querySelector(".showcase"); //background where video d
 const video = document.getElementById("video"); 
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
 
-let genre = ['suggested', 'originals', 'movies', 'series', 'watchlist']; //used to create carousel genres 
+let genre = ['suggested', 'originals', 'movies', 'series', 'games', 'watchlist']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
 let playButton = document.getElementById("play-button"); //play || pause
 let playIcon = document.getElementById("play-icon"); //play || pause --icon
