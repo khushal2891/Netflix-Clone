@@ -101,7 +101,7 @@ const array = [
         name: 'The Witcher 3: Wild Hunt',
         logo: 'assets/logos/witcher-logo.png',
         img: 'assets/pictures/witcher3.png',
-        trailer: ['assets/trailers/witcher-legend.mp4', 'assets/trailers/witcher-nextgen.mp4'],
+        trailer: ['assets/trailers/witcher-hearts-of-stone.mp4', 'assets/trailers/witcher-legend.mp4', 'assets/trailers/witcher-nextgen.mp4'],
         genre: ['games']
     }
     
@@ -159,7 +159,7 @@ function display() {
             let img = new Image();
             img.src = obj.img;
 
-            //genre added to obj if trailer exists
+            //suggested genre added to array obj if trailer exists
             if(obj.trailer.length > 0) {
                 obj.genre.push("suggested");
             }
