@@ -10,7 +10,7 @@ const array = [
         name: 'Avengers: Infinity War',
         logo: 'assets/logos/infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
-        trailer: ['assets/trailers/infinity-war.mp4'],
+        trailer: ['assets/trailers/avengers-infinity-war.mp4'],
         genre: ['movies']
     },
     {
