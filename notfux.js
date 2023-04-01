@@ -132,9 +132,9 @@ const array = [
 ];
 
 const caret = document.querySelector(".fa-caret-down");
-const toggle = document.querySelector(".togglebtn");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
 const showcase = document.querySelector(".showcase"); //background where video displays
+const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
 
@@ -144,6 +144,32 @@ let playButton = document.getElementById("play-button"); //play || pause
 let playIcon = document.getElementById("play-icon"); //play || pause --icon
 let selection; //will hold array of class selection items
 let showcaseImg = document.querySelector(".showcase-img"); //for video title logos
+
+
+//arranges array length
+function arrange() {
+
+    //refreshes array length in case changes were made
+    selection = document.querySelectorAll(".selection");
+    
+    for(let i = 0; i < selection.length; i++) {
+
+        selection[i].addEventListener("click", function() {
+
+            for(let j = 0; j < array.length; j++) {
+
+                //selects correct array item position by matching the items' names
+                if(array[j].name == selection[i].children[1].textContent) {
+                    
+                    num = j;
+                    theater();
+                    showcaseUI();
+                }
+            }
+        });
+    };
+    
+}
 
 
 //creates objects in webpage from array
@@ -195,9 +221,54 @@ function display() {
             figure.append(figCaption);
 
         });
-
     }
 
+
+    for(let h = 0; h < catalogue.children.length; h++) {
+        
+        //searches in document for watchlist carousel
+        if(catalogue.children[h].children[0].textContent == "Watchlist") {
+
+            //if watchlist is empty
+            if(catalogue.children[h].children[1].length == undefined) {
+        
+                catalogue.children[h].style.display = "none"; //it is hidden
+            }
+        }
+    };
+
+}
+
+
+//seems not to work on phones. Adding webpage to phone homescreen is a substitute
+function fullscreen() {
+
+    if(document.fullscreenElement) { //if currently in full screen mode
+        
+        if (document.exitFullscreen) {
+            document.exitFullscreen(); //Exit full screen mode
+        } else if (document.mozCancelFullScreen) { //Firefox
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) { //Chrome, Safari & Opera
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { //IE/Edge 
+        document.msExitFullscreen();
+        }
+    
+    } else { //Not in full screen mode
+        
+        const elem = document.documentElement; //Get the document element      
+    
+        if(elem.requestFullscreen) {
+            elem.requestFullscreen(); //Make the website go full screen
+        } else if (elem.mozRequestFullScreen) { //Firefox
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { //Chrome, Safari & Opera 
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { //IE/Edge 
+            elem.msRequestFullscreen();
+        }
+    }
 }
 
 
@@ -209,65 +280,7 @@ function randomRange(min,max) {
 }
 
 
-//arranges array length
-function arrange() {
-
-    //refreshes array length
-    selection = document.querySelectorAll(".selection");
-    
-    for(let i = 0; i < selection.length; i++) {
-
-        selection[i].addEventListener("click", function() {
-
-            for(let j = 0; j < array.length; j++) {
-
-                //Looks to match selection children elements array-- figCaption name
-                if(array[j].name == selection[i].children[1].textContent) {
-                    
-                    num = j;
-                    theater();
-                    showcaseUI();
-                }
-            }
-        });
-
-    };
-    
-}
-
-
-function fullscreen() {
-
-    if (document.fullscreenElement) { // if currently in full screen mode
-        
-        if (document.exitFullscreen) {
-            document.exitFullscreen(); // Exit full screen mode
-        } else if (document.mozCancelFullScreen) { /* Firefox */
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) { /* Chrome, Safari & Opera */
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { /* IE/Edge */
-        document.msExitFullscreen();
-        }
-    
-    } else { // Not in full screen mode
-        
-        const elem = document.documentElement; // Get the document element      
-    
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen(); // Make the website go full screen
-        } else if (elem.mozRequestFullScreen) { /* Firefox */
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE/Edge */
-            elem.msRequestFullscreen();
-        }
-    }
-}
-
-
-//plays, pauses, video & button
+//play or pause, video & button
 function showcaseUI() {
    
     if(video.paused) {
@@ -287,8 +300,10 @@ function showcaseUI() {
 }
 
 
+//selects item to display and play
 function theater() {
     
+    //displays corresponding item logo
     showcaseImg.src = array[num].logo;
     showcaseImg.style.height = '54px';
 
@@ -302,21 +317,21 @@ caret.addEventListener("click", function() {
     fullscreen();
 });
 
-toggle.addEventListener("click", function() {
-
-    fullscreen();
-});
-
 showcase.addEventListener("click", function() {
 
     showcaseUI();
 });
 
+toggle.addEventListener("click", function() {
 
-//add item to user watchlist
+    fullscreen();
+});
+
+
+//adds item to user watchlist
 watchList.addEventListener("click", function() {
 
-    video.play(); //always triggers pause when showcaseUI() runs
+    video.play(); //always triggers pause once showcaseUI() function runs
     
     let anchor = document.createElement("a");
     anchor.href = "#trailer"; 
@@ -333,10 +348,14 @@ watchList.addEventListener("click", function() {
     anchor.append(figure);
     figure.append(img);
     figure.append(figCaption);
+
     
     for(let h = 0; h < catalogue.children.length; h++) {
 
+        //locates watchlist carousel in document
         if(catalogue.children[h].children[0].textContent == "Watchlist") {
+
+            catalogue.children[h].style.display = "block"; //visibly displays carousel
 
             //appends item at the beginning of the list
             catalogue.children[h].children[1].insertBefore(anchor, catalogue.children[h].children[1].children[0]);
