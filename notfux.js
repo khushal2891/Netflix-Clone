@@ -10,7 +10,7 @@ const array = [
         name: 'Avengers: Infinity War',
         logo: 'assets/logos/infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
-        trailer: ['assets/trailers/avengers-infinity-war.mp4'],
+        trailer: ['assets/trailers/avengers-infinity-war.mp4', 'assets/trailers/avengers-infinity-war-2.mp4'],
         genre: ['movies']
     },
     {
@@ -238,9 +238,7 @@ function fullscreen() {
         } else if (elem.msRequestFullscreen) { /* IE/Edge */
             elem.msRequestFullscreen();
         }
-        
     }
-   
 }
 
 
