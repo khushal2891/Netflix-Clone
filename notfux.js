@@ -51,6 +51,13 @@ const array = [
         genre: ['movies']
     },
     {
+        name: '.Hack//Sign',
+        logo: 'assets/logos/hack-sign-logo.png',
+        img: 'assets/pictures/hack-sign.jpg',
+        trailer: ['assets/trailers/hack-sign-opening.mp4'],
+        genre: ['anime', 'series']
+    },
+    {
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
@@ -349,7 +356,7 @@ watchList.addEventListener("click", function() {
     figure.append(img);
     figure.append(figCaption);
 
-    
+
     for(let h = 0; h < catalogue.children.length; h++) {
 
         //locates watchlist carousel in document
@@ -360,7 +367,6 @@ watchList.addEventListener("click", function() {
             //appends item at the beginning of the list
             catalogue.children[h].children[1].insertBefore(anchor, catalogue.children[h].children[1].children[0]);
         }
-
     };
 
     arrange();
