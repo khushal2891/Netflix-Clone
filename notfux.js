@@ -133,11 +133,12 @@ const array = [
         logo: 'assets/logos/witcher-logo.png',
         img: 'assets/pictures/witcher3.png',
         trailer: [
-            'assets/trailers/witcher-game-of-year.mp4' ,
+            'assets/trailers/witcher-blood-and-wine.mp4',
+            'assets/trailers/witcher-game-of-year.mp4',
             'assets/trailers/witcher-hearts-of-stone.mp4', 
             'assets/trailers/witcher-legend.mp4', 
-            'assets/trailers/witcher-nextgen.mp4',
-            'assets/trailers/witcher-blood-and-wine.mp4'
+            'assets/trailers/witcher-monsters.mp4',
+            'assets/trailers/witcher-nextgen.mp4'
             ],
         genre: ['games']
     }
