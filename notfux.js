@@ -53,7 +53,7 @@ const array = [
     {
         name: '.Hack//Sign',
         logo: 'assets/logos/hack-sign-logo.png',
-        img: 'assets/pictures/hack-sign.jpg',
+        img: 'assets/pictures/hack-sign.png',
         trailer: ['assets/trailers/hack-sign-opening.mp4'],
         genre: ['anime', 'series']
     },
