@@ -234,8 +234,8 @@ function display() {
             anchor.append(figure);
             figure.append(img);
             figure.append(figCaption);
-
         });
+
     }
 
 
@@ -382,10 +382,21 @@ watchList.addEventListener("click", function() {
 });
 
 
+//should help to always resize screen properly
+setTimeout(function() {
+    window.addEventListener("resize", function() {
+        
+        setTimeout(function() {
+            screenHeight = window.innerHeight;
+            screenWidth = window.innerWidth;
+        },100);
+    });
+}, 25); 
+
+
 window.onload = function() { 
 
     display();
     theater();
     arrange();
-
 };
