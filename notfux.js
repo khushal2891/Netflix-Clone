@@ -20,6 +20,16 @@ const array = [
         genre: ['movies']
     },
     {
+        name: 'The Big O',
+        logo: 'assets/logos/big-o-logo.png',
+        img: 'assets/pictures/big-o.png',
+        trailer: [
+            'assets/trailers/big-o-opening-1.mp4',
+            'assets/trailers/big-o-opening-2.mp4'
+        ],
+        genre: ['anime', 'series']
+    },
+    {
         name: 'Captain America: Civil War',
         logo: 'assets/logo.png',
         img: 'assets/pictures/captain-civil-war.jpg',
@@ -382,7 +392,7 @@ watchList.addEventListener("click", function() {
 });
 
 
-//should help to always resize screen properly
+//on phones, should help to always resize screen properly
 setTimeout(function() {
     window.addEventListener("resize", function() {
         
