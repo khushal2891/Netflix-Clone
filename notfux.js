@@ -25,7 +25,8 @@ const array = [
         img: 'assets/pictures/big-o.png',
         trailer: [
             'assets/trailers/big-o-opening-1.mp4',
-            'assets/trailers/big-o-opening-2.mp4'
+            'assets/trailers/big-o-opening-2.mp4',
+            'assets/trailers/big-o-credits.mp4'
         ],
         genre: ['anime', 'series']
     },
