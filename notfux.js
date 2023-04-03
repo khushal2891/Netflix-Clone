@@ -392,7 +392,7 @@ watchList.addEventListener("click", function() {
 
 });
 
-
+//needs fixing 
 //on phones, should help to always resize screen properly
 setTimeout(function() {
     window.addEventListener("resize", function() {
