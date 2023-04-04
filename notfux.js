@@ -310,7 +310,7 @@ function randomRange(min,max) {
 function showcaseUI() {
 
     const header = document.querySelector("header");
-    
+
     header.style.transition = "1s ease-in-out 0ms";
     header.style.visibility = "visible";
     header.style.opacity = "1";
@@ -412,18 +412,6 @@ watchList.addEventListener("click", function() {
     arrange();
 
 });
-
-
-//on phones, should help to always resize screen properly
-setTimeout(function() {
-    window.addEventListener("resize", function() {
-        
-        setTimeout(function() {
-            screenHeight = window.innerHeight;
-            screenWidth = window.innerWidth;
-        },100);
-    });
-}, 25); 
 
 
 window.onload = function() { 
