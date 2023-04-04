@@ -190,14 +190,16 @@ nav {
     width: 280px;
 }
 
-.selection img:active, .selection img:hover {
+.selection img:active, 
+.selection img:hover {
     border: solid ghostwhite 2px;
     transition: ease-in-out;
     transition-duration: 1.1s;
 }
 
-.showcase { 
+.showcase {     
     min-height: 70vh;
+    transition: 5s ease-in-out 1000ms;
 }
 
 .showcase-img {
@@ -206,11 +208,12 @@ nav {
     width: 180px;
 }
 
-.showcase-title {
+.showcase-title { 
     display: flex;
         flex-direction: column;
     padding-top: 50vh;
-    margin-left: 2.5%;
+    padding-left: 2.5%;
+    transition: 5s ease-in-out 1000ms;
 }
 
 .togglebtn {
