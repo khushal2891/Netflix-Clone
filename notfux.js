@@ -160,6 +160,7 @@ const array = [
 const caret = document.querySelector(".fa-caret-down");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
 const showcase = document.querySelector(".showcase"); //background where video displays
+const title = document.querySelector(".showcase-title");
 const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
@@ -314,6 +315,8 @@ function showcaseUI() {
     header.style.transition = "1s ease-in-out 0ms";
     header.style.visibility = "visible";
     header.style.opacity = "1";
+    showcase.style.minHeight = "70vh";
+    title.style.paddingTop = "50vh";
    
     if(video.paused) {
 
@@ -322,11 +325,14 @@ function showcaseUI() {
         console.log(array[num].trailer);
 
         if(array[num].trailer != 0) {
+
             playButton.textContent = "Pause";
             playIcon.className = "fa fa-pause";
 
             header.style.transition = "5s ease-in-out 1000ms";
             header.style.opacity = "0";
+            showcase.style.minHeight = "85vh";
+            title.style.paddingTop = "60vh";
 
             if(header.style.opacity == "0") {
                 header.style.visibility = "hidden";
@@ -336,10 +342,6 @@ function showcaseUI() {
     } else {
 
         video.pause();
-
-        header.style.transition = "1s ease-in-out 0ms";
-        header.style.visibility = "visible";
-        header.style.opacity = "1";
 
         playButton.textContent = "Play";
         playIcon.className = "fa fa-play";
