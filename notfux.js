@@ -308,17 +308,38 @@ function randomRange(min,max) {
 
 //play or pause, video & button
 function showcaseUI() {
+
+    const header = document.querySelector("header");
+    
+    header.style.transition = "1s ease-in-out 0ms";
+    header.style.visibility = "visible";
+    header.style.opacity = "1";
    
     if(video.paused) {
 
         video.play();
 
-        playButton.textContent = "Pause";
-        playIcon.className = "fa fa-pause";
+        console.log(array[num].trailer);
+
+        if(array[num].trailer != 0) {
+            playButton.textContent = "Pause";
+            playIcon.className = "fa fa-pause";
+
+            header.style.transition = "2.5s ease-in-out 1000ms";
+            header.style.opacity = "0";
+
+            if(header.style.opacity == "0") {
+                header.style.visibility = "hidden";
+            }
+        }
 
     } else {
 
         video.pause();
+
+        header.style.transition = "1s ease-in-out 0ms";
+        header.style.visibility = "visible";
+        header.style.opacity = "1";
 
         playButton.textContent = "Play";
         playIcon.className = "fa fa-play";
@@ -392,7 +413,7 @@ watchList.addEventListener("click", function() {
 
 });
 
-//needs fixing 
+
 //on phones, should help to always resize screen properly
 setTimeout(function() {
     window.addEventListener("resize", function() {
