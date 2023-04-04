@@ -325,7 +325,7 @@ function showcaseUI() {
             playButton.textContent = "Pause";
             playIcon.className = "fa fa-pause";
 
-            header.style.transition = "2.5s ease-in-out 1000ms";
+            header.style.transition = "5s ease-in-out 1000ms";
             header.style.opacity = "0";
 
             if(header.style.opacity == "0") {
