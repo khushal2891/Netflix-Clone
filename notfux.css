@@ -97,6 +97,7 @@ figcaption {
 header {
     background-color: black;
     display: flex;
+    transition: 5s ease-in-out 1000ms;
     width: 100%;
 }
 
