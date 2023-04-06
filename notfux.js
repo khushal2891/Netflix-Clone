@@ -101,7 +101,7 @@ const array = [
     {
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
-        img: 'assets/pictures/knights-sidonia.png',
+        img: 'assets/pictures/knights-of-sidonia.png',
         trailer: [
             'assets/trailers/knights-sidonia-1.mp4', 
             'assets/trailers/knights-sidonia-2.mp4'
@@ -330,8 +330,6 @@ function showcaseUI() {
             playIcon.className = "fa fa-pause";
 
             header.style.transition = "5s ease-in-out 1000ms";
-            //header.style.marginTop = "-15vh";
-            //header.style.marginBottom = "15vh";
             header.style.opacity = "0";
             showcase.style.minHeight = "90vh";
             title.style.paddingTop = "65vh";
