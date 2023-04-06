@@ -314,7 +314,7 @@ function showcaseUI() {
 
     header.style.transition = "1s ease-in-out 0ms";
     header.style.visibility = "visible";
-    header.style.marginTop = "0";
+    header.style.marginTop = "15vh";
     header.style.opacity = "1";
     showcase.style.minHeight = "70vh";
     title.style.paddingTop = "50vh";
