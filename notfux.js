@@ -333,7 +333,7 @@ function showcaseUI() {
             header.style.transition = "5s ease-in-out 1000ms";
             header.style.marginTop = "-15vh";
             header.style.opacity = "0";
-            showcase.style.minHeight = "90vh";
+            showcase.style.minHeight = "105vh";
             title.style.paddingTop = "65vh";
 
             if(header.style.opacity == "0") {
