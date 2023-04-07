@@ -6,8 +6,6 @@
     -webkit-touch-callout:none;
     -webkit-user-select: none;
     scroll-behavior: smooth;
-    
-    border: 1px solid white;
 }
 
 *::-webkit-scrollbar {
