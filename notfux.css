@@ -26,14 +26,10 @@ body {
     color:white;
     font-family: 'montserrat', sans-serif;
     height: 100%;
-    min-height: 100vh;
-    min-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
     width: 100%;
 }
-
-/* body::-webkit-scrollbar {
-    display: none;
-} */
 
 button {
     background-color: rgba(255, 255, 255, 0.3);
@@ -62,10 +58,6 @@ button:hover {
     overflow: scroll;
     width: 100%;
 }
-
-/* .carousel::-webkit-scrollbar {
-    display: none;
-} */
 
 .catalogue {
     background: linear-gradient(180deg, rgba(0,0,0,0.001) 1.5%, rgba(0,0,0,0.05) 3%, rgba(0,0,0,0.1) 6%, rgba(0,0,0,0.5) 12%, rgba(0,0,0,1) 28%);
