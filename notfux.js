@@ -410,10 +410,10 @@ watchList.addEventListener("click", function() {
 });
 
 
-//window.addEventListener("resize", function() {
+window.addEventListener("resize", function() {
         
-    //header.style.transition = "0s ease-in-out 0ms";
-//});
+    header.style.transition = "0s ease-in-out 0ms";
+});
 
 
 window.onload = function() { 
