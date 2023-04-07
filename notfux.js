@@ -67,7 +67,7 @@ const array = [
     {
         name: '.Hack//Sign',
         logo: 'assets/logos/hack-sign-logo.png',
-        img: 'assets/pictures/hack-sign.png',
+        img: 'assets/pictures/hack-sign.jpg',
         trailer: [
             'assets/trailers/hack-sign-opening.mp4',
             'assets/trailers/hack-sign-credits.mp4'
