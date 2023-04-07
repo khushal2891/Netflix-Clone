@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 a { 
     color:white;
     text-decoration: none;
@@ -27,9 +31,9 @@ body {
     width: 100%;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 button {
     background-color: rgba(255, 255, 255, 0.3);
@@ -59,9 +63,9 @@ button:hover {
     width: 100%;
 }
 
-.carousel::-webkit-scrollbar {
+/* .carousel::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .catalogue {
     background: linear-gradient(180deg, rgba(0,0,0,0.001) 1.5%, rgba(0,0,0,0.05) 3%, rgba(0,0,0,0.1) 6%, rgba(0,0,0,0.5) 12%, rgba(0,0,0,1) 28%);
@@ -133,7 +137,8 @@ main {
     list-style: none;
 }
 
-.menu li:active, .menu li:hover {
+.menu li:active, 
+.menu li:hover {
     text-shadow: 0 0 2px ghostwhite;
 }
 
