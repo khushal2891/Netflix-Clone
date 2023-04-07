@@ -312,9 +312,9 @@ function showcaseUI() {
 
     const header = document.querySelector("header");
 
-    header.style.transition = "1s ease-in-out 0ms";
-    header.style.visibility = "visible";
-    header.style.opacity = "1";
+    header.style.transition = "2.5s ease-in-out 0ms";
+    header.style.marginTop = "0vh";
+    header.style.marginBottom = "0vh";
     showcase.style.minHeight = "70vh";
     title.style.paddingTop = "50vh";
    
@@ -322,21 +322,16 @@ function showcaseUI() {
 
         video.play();
 
-        console.log(array[num].trailer);
-
         if(array[num].trailer != 0) {
 
             playButton.textContent = "Pause";
             playIcon.className = "fa fa-pause";
 
             header.style.transition = "5s ease-in-out 1000ms";
-            header.style.opacity = "0";
+            header.style.marginTop = "-15vh";
+            header.style.marginBottom = "15vh";
             showcase.style.minHeight = "90vh";
             title.style.paddingTop = "65vh";
-
-            if(header.style.opacity == "0") {
-                header.style.visibility = "hidden";
-            }
         }
 
     } else {
