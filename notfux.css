@@ -220,7 +220,7 @@ nav {
     display: none;
 }
 
-video { border: 1px white solid;
+video {
     height: 100vh;
     object-fit:cover;
     position: absolute;
