@@ -159,6 +159,7 @@ const array = [
 
 const caret = document.querySelector(".fa-caret-down");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
+const header = document.querySelector("header");
 const showcase = document.querySelector(".showcase"); //background where video displays
 const title = document.querySelector(".showcase-title");
 const toggle = document.querySelector(".togglebtn");
@@ -310,8 +311,6 @@ function randomRange(min,max) {
 //play or pause, video & button
 function showcaseUI() {
 
-    const header = document.querySelector("header");
-
     header.style.transition = "2.5s ease-in-out 0ms";
     header.style.marginTop = "0vh";
     header.style.marginBottom = "0vh";
@@ -408,6 +407,12 @@ watchList.addEventListener("click", function() {
 
     arrange();
 
+});
+
+
+window.addEventListener("resize", function() {
+        
+    header.style.transition = "0s ease-in-out 0ms";
 });
 
 
