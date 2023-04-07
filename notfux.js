@@ -328,8 +328,8 @@ function showcaseUI() {
             playIcon.className = "fa fa-pause";
 
             header.style.transition = "5s ease-in-out 1000ms";
-            header.style.marginTop = "-15vh";
-            header.style.marginBottom = "15vh";
+            header.style.marginTop = "-25vh";
+            header.style.marginBottom = "25vh";
             showcase.style.minHeight = "90vh";
             title.style.paddingTop = "65vh";
         }
