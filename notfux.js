@@ -312,8 +312,8 @@ function randomRange(min,max) {
 function showcaseUI() {
 
     header.style.transition = "2.5s ease-in-out 0ms";
-    header.style.marginTop = "0vh";
-    header.style.marginBottom = "0vh";
+    header.style.marginTop = "0";
+    header.style.marginBottom = "0";
     showcase.style.minHeight = "70vh";
     title.style.paddingTop = "50vh";
    
