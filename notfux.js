@@ -125,7 +125,7 @@ const array = [
     {
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
-        img: 'assets/pictures/trigun.png',
+        img: 'assets/pictures/trigun.jpg',
         trailer: [
             'assets/trailers/trigun.mp4', 
             'assets/trailers/trigun-credits.mp4'
