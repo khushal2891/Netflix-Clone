@@ -413,6 +413,9 @@ watchList.addEventListener("click", function() {
 window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms";
+    
+    const viewportmeta = document.querySelector('meta[name=viewport]');
+    viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
 });
 
 
