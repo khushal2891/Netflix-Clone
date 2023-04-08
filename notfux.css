@@ -62,8 +62,10 @@ button:hover {
 
 .catalogue {
     background: linear-gradient(180deg, rgba(0,0,0,0.001) 1.5%, rgba(0,0,0,0.05) 3%, rgba(0,0,0,0.1) 6%, rgba(0,0,0,0.5) 12%, rgba(0,0,0,1) 28%);
+    height: 100%;
     margin-top: 15px;
     padding-top: 15px;
+    width: 100%;
 }
 
 .category h3 {
