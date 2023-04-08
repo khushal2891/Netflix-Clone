@@ -27,7 +27,6 @@ body {
     font-family: 'montserrat', sans-serif;
     max-height: 100vh;
     max-width: 100vw;
-    overflow:hidden;
 }
 
 button {
@@ -103,12 +102,10 @@ header {
 }
 
 main {  
-    height: 100%;
     max-height: 100vh;
     max-width: 100vw;
     overflow:scroll;
     position: relative;
-    width: 100%;
 }
 
 .menu { 
