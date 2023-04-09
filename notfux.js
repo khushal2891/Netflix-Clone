@@ -1,5 +1,12 @@
 const array = [
     {
+        name: '300',
+        logo: 'assets/logos/300-logo.png',
+        img: 'assets/pictures/300.jpeg',
+        trailer: ['assets/trailers/300.mp4'],
+        genre: ['movies']
+    },
+    {
         name: 'Avengers: Endgame',
         logo: 'assets/logos/avengers-endgame-logo.png',
         img: 'assets/pictures/avengers-endgame.png',
