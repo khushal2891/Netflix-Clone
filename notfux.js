@@ -65,16 +65,6 @@ const array = [
         genre: ['movies']
     },
     {
-        name: '.Hack//Sign',
-        logo: 'assets/logos/hack-sign-logo.png',
-        img: 'assets/pictures/hack-sign.jpg',
-        trailer: [
-            'assets/trailers/hack-sign-opening.mp4',
-            'assets/trailers/hack-sign-credits.mp4'
-            ],
-        genre: ['anime', 'series']
-    },
-    {
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
@@ -92,6 +82,16 @@ const array = [
         genre: ['movies']
     },
     {
+        name: '.Hack//Sign',
+        logo: 'assets/logos/hack-sign-logo.png',
+        img: 'assets/pictures/hack-sign.jpg',
+        trailer: [
+            'assets/trailers/hack-sign-opening.mp4',
+            'assets/trailers/hack-sign-credits.mp4'
+            ],
+        genre: ['anime', 'series']
+    },
+    {
         name: 'Iron Man',
         logo: 'assets/logo.png',
         img: 'assets/pictures/iron-man.jpg',
@@ -107,6 +107,16 @@ const array = [
             'assets/trailers/knights-sidonia-2.mp4'
             ],
         genre: ['anime', 'originals', 'series']
+    },
+    {
+        name: 'Neon Genesis Evangelion',
+        logo: 'assets/logos/evangelion-logo.png',
+        img: 'assets/pictures/evangelion.png',
+        trailer: [
+            'assets/trailers/evangelion-opening.mp4',
+            'assets/trailers/evangelion-credits.mp4'
+        ],
+        genre: ['anime', 'series']
     },
     {
         name: 'Samurai Champloo',
@@ -156,6 +166,7 @@ const array = [
     }
     
 ];
+
 
 const caret = document.querySelector(".fa-caret-down");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
@@ -340,6 +351,7 @@ function showcaseUI() {
         playButton.textContent = "Play";
         playIcon.className = "fa fa-play";
     }
+
 }
 
 
