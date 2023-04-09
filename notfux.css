@@ -214,14 +214,14 @@ nav {
 }
 
 video { 
-    height: 100vh;
-    object-fit:cover;
+    max-height: 100vh;
+    object-fit: cover;
     position: absolute;
         left: 0;
         top: 0;
     margin-left: 0;
     margin-right: 0;
-    width: 100vw;
+    max-width: 100vw;
     z-index: -1;
 }
 
