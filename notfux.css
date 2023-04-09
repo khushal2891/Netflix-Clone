@@ -53,8 +53,10 @@ button:hover {
         flex-direction: row;
         flex-wrap: nowrap;
     height: 240px;
+    max-width: 99vw;
     overflow-x: scroll;
-    width: 100vw;
+    width: 98vw;
+    
 }
 
 .catalogue {
