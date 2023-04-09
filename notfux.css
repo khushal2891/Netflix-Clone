@@ -108,7 +108,7 @@ header {
 }
 
 main {  
-    height: 100%;
+    height: 100vh;
     max-height: 100vh;
     max-width: 100vw;
     overflow: scroll;
