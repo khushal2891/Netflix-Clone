@@ -434,7 +434,7 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms";
     
-    viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+    //viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
 });
 
 
