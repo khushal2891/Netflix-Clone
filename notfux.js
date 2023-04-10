@@ -1,4 +1,4 @@
-u try const array = [
+const array = [
     {
         name: '300',
         logo: 'assets/logos/300-logo.png',
