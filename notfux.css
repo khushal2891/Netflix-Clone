@@ -220,8 +220,8 @@ nav {
 
 video { 
     height: 100vh;
-    object-fit: fill;
-    position: absolute;
+    object-fit: cover;
+    position: fixed;
         left: 0;
         top: 0;
     width: 100vw;
