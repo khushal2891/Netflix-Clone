@@ -182,7 +182,7 @@ const showcase = document.querySelector(".showcase"); //background where video d
 const title = document.querySelector(".showcase-title");
 const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
-const viewportmeta = document.querySelector('meta[name=viewport]');
+//const viewportmeta = document.querySelector('meta[name=viewport]');
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
 
 let genre = ['originals', 'movies', 'series', 'games', 'watchlist']; //used to create carousel genres 
