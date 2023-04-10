@@ -1,4 +1,4 @@
-const array = [
+u try const array = [
     {
         name: '300',
         logo: 'assets/logos/300-logo.png',
@@ -182,6 +182,7 @@ const showcase = document.querySelector(".showcase"); //background where video d
 const title = document.querySelector(".showcase-title");
 const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
+const viewportmeta = document.querySelector('meta[name=viewport]');
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
 
 let genre = ['originals', 'movies', 'series', 'games', 'watchlist']; //used to create carousel genres 
@@ -433,8 +434,7 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms";
     
-    const viewportmeta = document.querySelector('meta[name=viewport]');
-    viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+    //viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
 });
 
 
