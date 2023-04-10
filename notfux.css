@@ -227,6 +227,7 @@ nav {
 video { 
     height: 100vh;
     object-fit:cover;
+    overflow: hidden;
     position: absolute;
         left: 0;
         top: 0;
