@@ -218,8 +218,8 @@ nav {
     display: none;
 }
 
-video { border: 1px solid white;
-    height: 100vh;
+video { 
+    max-height: 100vh;
     object-fit: cover;
     position: absolute;
         left: 0;
