@@ -134,7 +134,7 @@ main {
 nav { 
     display: flex;
         flex-wrap: wrap;
-    width: 85%;
+    /width: 85%;
 }
 
 #play-icon {
