@@ -111,6 +111,7 @@ main {
     overflow-y: scroll;
     position: relative;
     max-width: 100vw;
+    min-width: 100vw;
     width: 100%;
 }
 
@@ -229,6 +230,7 @@ video {
         left: 0;
         top: 0;
     max-width: 100vw;
+    min-width: 100vw;
     width:100%;
     z-index: -1;
 }
