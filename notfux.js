@@ -349,7 +349,7 @@ function showcaseUI() {
             header.style.marginTop = "-25vh";
             header.style.marginBottom = "25vh";
             showcase.style.minHeight = "90vh";
-            title.style.paddingTop = "70vh";
+            title.style.paddingTop = "69vh";
         }
 
     } else {
