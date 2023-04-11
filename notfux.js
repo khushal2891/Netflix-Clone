@@ -182,8 +182,8 @@ const showcase = document.querySelector(".showcase"); //background where video d
 const title = document.querySelector(".showcase-title");
 const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
-const viewportmeta = document.querySelector('meta[name=viewport]');
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
+const viewport = document.querySelector('meta[name=viewport]'); //to prevent mobile resize zoom
 
 let genre = ['originals', 'movies', 'series', 'games', 'watchlist']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
@@ -432,9 +432,10 @@ watchList.addEventListener("click", function() {
 
 window.addEventListener("resize", function() {
         
-    header.style.transition = "0s ease-in-out 0ms";
+    header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
-    viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+    //prevents zoom of mobile screen that sometimes happens on resize
+    viewport.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
 });
 
 
