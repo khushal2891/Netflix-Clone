@@ -435,7 +435,7 @@ window.addEventListener("resize", function() {
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
     //prevents zoom of mobile screen that sometimes happens on resize
-    //viewport.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+    viewport.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
 });
 
 
