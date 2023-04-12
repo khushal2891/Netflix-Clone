@@ -38,13 +38,6 @@ const array = [
         genre: ['anime', 'series']
     },
     {
-        name: 'Captain America: Civil War',
-        logo: 'assets/logo.png',
-        img: 'assets/pictures/captain-civil-war.jpg',
-        trailer: [],
-        genre: ['movies']
-    },
-    {
         name: 'Cowboy Bebop',
         logo: 'assets/logos/bebop-logo.png',
         img: 'assets/pictures/cowboy-bebop.jpg',
@@ -58,20 +51,6 @@ const array = [
         genre: ['anime', 'series']
     },
     {
-        name: 'Deadpool',
-        logo: 'assets/logo.png',
-        img: 'assets/pictures/deadpool.jpg',
-        trailer: [],
-        genre: ['movies']
-    },
-    {
-        name: 'Doctor Strange',
-        logo: 'assets/logo.png',
-        img: 'assets/pictures/doctor-strange.png',
-        trailer: [],
-        genre: ['movies']
-    },
-    {
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
@@ -82,13 +61,6 @@ const array = [
         genre: ['anime', 'series']
     },
     {
-        name: 'Guardians Of The Galaxy',
-        logo: 'assets/logo.png',
-        img: 'assets/pictures/guardians-of-the-galaxy.jpg',
-        trailer: [],
-        genre: ['movies']
-    },
-    {
         name: '.Hack//Sign',
         logo: 'assets/logos/hack-sign-logo.png',
         img: 'assets/pictures/hack-sign.jpg',
@@ -97,13 +69,6 @@ const array = [
             'assets/trailers/hack-sign-credits.mp4'
             ],
         genre: ['anime', 'series']
-    },
-    {
-        name: 'Iron Man',
-        logo: 'assets/logo.png',
-        img: 'assets/pictures/iron-man.jpg',
-        trailer: [],
-        genre: ['movies']
     },
     {
         name: 'Knights Of Sidonia',
@@ -133,13 +98,6 @@ const array = [
         genre: ['anime', 'series']
     },
     {
-        name: 'Thor: Love And Thunder',
-        logo: 'assets/logo.png',
-        img: 'assets/pictures/thor-love-thunder.png',
-        trailer: [],
-        genre: ['movies']
-    },
-    {
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.jpg',
@@ -150,10 +108,10 @@ const array = [
         genre: ['anime', 'series']
     },
     {
-        name: 'Venom',
-        logo: 'assets/logo.png',
-        img: 'assets/pictures/venom.jpg',
-        trailer: [],
+        name: 'Troy',
+        logo: 'assets/logos/troy-logo.png',
+        img: 'assets/pictures/troy.png',
+        trailer: ['assets/trailers/troy.mp4'],
         genre: ['movies']
     },
     {
