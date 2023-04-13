@@ -98,6 +98,13 @@ const array = [
         genre: ['anime', 'series']
     },
     {
+        name: 'Transcendent Man',
+        logo: 'assets/logos/transcendent-man-logo.png',
+        img: 'assets/pictures/transcendent-man.png',
+        trailer: ['assets/trailers/transcendent-man.mp4'],
+        genre: ['movies']
+    },
+    {
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.jpg',
@@ -111,7 +118,10 @@ const array = [
         name: 'Troy',
         logo: 'assets/logos/troy-logo.png',
         img: 'assets/pictures/troy.png',
-        trailer: ['assets/trailers/troy.mp4'],
+        trailer: [
+            'assets/trailers/troy-1.mp4',
+            'assets/trailers/troy-2.mp4'    
+        ],
         genre: ['movies']
     },
     {
