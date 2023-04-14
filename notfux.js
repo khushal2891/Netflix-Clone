@@ -95,8 +95,8 @@ const array = [
         logo: 'assets/logos/rome-logo.png',
         img: 'assets/pictures/rome.png',
         trailer: [
-            'assets/trailers/rome-1.mp4'//, 
-            //'assets/trailers/rome-2.mp4', 
+            'assets/trailers/rome-1.mp4', 
+            'assets/trailers/rome-opening.mp4', 
             ],
         genre: ['originals', 'series']
     },
