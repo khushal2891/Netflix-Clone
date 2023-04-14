@@ -91,6 +91,16 @@ const array = [
         genre: ['anime', 'series']
     },
     {
+        name: 'Rome',
+        logo: 'assets/logos/rome-logo.png',
+        img: 'assets/pictures/rome.png',
+        trailer: [
+            'assets/trailers/rome-1.mp4'//, 
+            //'assets/trailers/rome-2.mp4', 
+            ],
+        genre: ['originals', 'series']
+    },
+    {
         name: 'Samurai Champloo',
         logo: 'assets/logos/champloo-logo.png',
         img: 'assets/pictures/samurai-champloo.jpg',
