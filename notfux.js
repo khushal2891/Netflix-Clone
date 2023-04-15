@@ -33,6 +33,7 @@ const array = [
         name: 'The Big O',
         logo: 'assets/logos/big-o-logo.png',
         img: 'assets/pictures/big-o.png',
+        poster: 'assets/background/big-o.png',
         trailer: [
             'assets/trailers/big-o-opening-1.mp4',
             'assets/trailers/big-o-opening-2.mp4',
