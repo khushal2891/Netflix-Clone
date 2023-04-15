@@ -3,6 +3,7 @@ const array = [
         name: '300',
         logo: 'assets/logos/300-logo.png',
         img: 'assets/pictures/300.jpeg',
+        poster: 'assets/background/300.png',
         trailer: ['assets/trailers/300.mp4'],
         genre: ['movies']
     },
@@ -10,6 +11,7 @@ const array = [
         name: 'Avengers: Endgame',
         logo: 'assets/logos/avengers-endgame-logo.png',
         img: 'assets/pictures/avengers-endgame.png',
+        poster: 'assets/background/endgame.png',
         trailer: [
             'assets/trailers/avengers-endgame-1.mp4',
             'assets/trailers/avengers-endgame-2.mp4'
@@ -133,6 +135,7 @@ const array = [
         name: 'Trigun',
         logo: 'assets/logos/trigun-logo.png',
         img: 'assets/pictures/trigun.jpg',
+        poster: 'assets/background/trigun.png',
         trailer: [
             'assets/trailers/trigun.mp4', 
             'assets/trailers/trigun-credits.mp4'
@@ -364,6 +367,7 @@ function theater() {
     showcaseImg.style.height = '54px';
 
     //allows for multiple object array trailers to randomly play
+    video.poster = array[num].poster;
     video.src = array[num].trailer[randomRange(0, array[num].trailer.length - 1)];
 }
 
