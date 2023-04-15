@@ -22,6 +22,7 @@ const array = [
         name: 'Avengers: Infinity War',
         logo: 'assets/logos/avengers-infinity-logo.png',
         img: 'assets/pictures/infinity-war.png',
+        poster: 'assets/background/infinity-war.png',
         trailer: [
             'assets/trailers/avengers-infinity-war.mp4', 
             'assets/trailers/avengers-infinity-war-2.mp4'
@@ -43,6 +44,7 @@ const array = [
         name: 'Cowboy Bebop',
         logo: 'assets/logos/bebop-logo.png',
         img: 'assets/pictures/cowboy-bebop.jpg',
+        poster: 'assets/background/bebop.png',
         trailer: [
             'assets/trailers/cowboy-bebop-opening.mp4', 
             'assets/trailers/bebop-four.mov', 
