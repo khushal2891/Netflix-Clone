@@ -51,6 +51,18 @@ const array = [
         genre: ['anime', 'series']
     },
     {
+        name: 'Game Of Thrones',
+        logo: 'assets/logos/game-of-thrones-logo.png',
+        img: 'assets/pictures/game-of-thrones.png',
+        trailer: [
+            'assets/trailers/game-of-thrones-s1.mp4', 
+            'assets/trailers/game-of-thrones-s2.mp4', 
+            'assets/trailers/game-of-thrones-s3.mp4', 
+            'assets/trailers/game-of-thrones-s4.mp4', 
+            ],
+        genre: ['originals', 'series']
+    },
+    {
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
@@ -163,7 +175,7 @@ const video = document.getElementById("video");
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
 const viewport = document.querySelector('meta[name=viewport]'); //to prevent mobile resize zoom
 
-let genre = ['originals', 'movies', 'series', 'games', 'watchlist']; //used to create carousel genres 
+let genre = ['originals', 'movies', 'series', 'games', 'anime', 'watchlist']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
 let playButton = document.getElementById("play-button"); //play || pause
 let playIcon = document.getElementById("play-icon"); //play || pause --icon
