@@ -342,7 +342,12 @@ function showcaseUI() {
     if(video.paused) {
 
         setTimeout(function() { 
-            video.play() 
+
+            if(playButton.textContent == "Pause") {
+
+                video.play();
+            }
+            
         }, 2500); //waits 2.5 secs
         
 
