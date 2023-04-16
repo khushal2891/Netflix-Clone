@@ -340,7 +340,10 @@ function showcaseUI() {
    
     if(video.paused) {
 
-        video.play();
+        setTimeout(function() { 
+            video.play() 
+        }, 2500); //waits 2.5 secs
+        
 
         if(array[num].trailer != 0) {
 
