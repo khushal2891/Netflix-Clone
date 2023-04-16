@@ -162,6 +162,7 @@ const array = [
         name: 'The Witcher 3: Wild Hunt',
         logo: 'assets/logos/witcher-logo.png',
         img: 'assets/pictures/witcher3.png',
+        poster: 'assets/background/witcher3.png',
         trailer: [
             'assets/trailers/witcher-blood-and-wine.mp4',
             'assets/trailers/witcher-bruxa.mp4',
