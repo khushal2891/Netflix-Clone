@@ -59,6 +59,7 @@ const array = [
         name: 'Game Of Thrones',
         logo: 'assets/logos/game-of-thrones-logo.png',
         img: 'assets/pictures/game-of-thrones.png',
+        poster: 'assets/background/game-of-thrones.png',
         trailer: [
             'assets/trailers/game-of-thrones-s1.mp4', 
             'assets/trailers/game-of-thrones-s2.mp4', 
@@ -74,6 +75,7 @@ const array = [
         name: 'Ghost In The Shell: Stand Alone Complex',
         logo: 'assets/logos/ghost-shell-logo.png',
         img: 'assets/pictures/ghost-in-the-shell.png',
+        poster: 'assets/background/ghost-in-the-shell.png',
         trailer: [
             'assets/trailers/ghost-first-gig.mp4', 
             'assets/trailers/ghost-second-gig.mp4'
@@ -104,6 +106,7 @@ const array = [
         name: 'Neon Genesis Evangelion',
         logo: 'assets/logos/evangelion-logo.png',
         img: 'assets/pictures/evangelion.png',
+        poster: 'assets/background/evangelion.png',
         trailer: [
             'assets/trailers/evangelion-opening.mp4',
             'assets/trailers/evangelion-credits.mp4'
@@ -434,8 +437,6 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
-    //prevents zoom of mobile screen that sometimes happens on resize
-    //viewport.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
 });
 
 
