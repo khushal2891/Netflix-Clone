@@ -86,6 +86,7 @@ const array = [
         name: '.Hack//Sign',
         logo: 'assets/logos/hack-sign-logo.png',
         img: 'assets/pictures/hack-sign.jpg',
+        poster: 'assets/background/hack-sign.png',
         trailer: [
             'assets/trailers/hack-sign-opening.mp4',
             'assets/trailers/hack-sign-credits.mp4'
@@ -96,6 +97,7 @@ const array = [
         name: 'Knights Of Sidonia',
         logo: 'assets/logos/sidonia-logo.png',
         img: 'assets/pictures/knights-of-sidonia.png',
+        poster: 'assets/background/knights-of-sidonia.png',
         trailer: [
             'assets/trailers/knights-sidonia-1.mp4', 
             'assets/trailers/knights-sidonia-2.mp4'
@@ -117,6 +119,7 @@ const array = [
         name: 'Rome',
         logo: 'assets/logos/rome-logo.png',
         img: 'assets/pictures/rome.png',
+        poster: 'assets/background/rome.png',
         trailer: [
             'assets/trailers/rome-1.mp4', 
             'assets/trailers/rome-opening.mp4', 
