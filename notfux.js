@@ -355,7 +355,7 @@ function showcaseUI() {
                 
             }, 2500); //waits 2.5 secs
 
-         } else if(playButton.textContent == "Play") {
+         } else {
             
             video.play();
         }
