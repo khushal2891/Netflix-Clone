@@ -359,7 +359,7 @@ function showcaseUI() {
             
             video.play();
         }
-    }
+
 
         if(array[num].trailer != 0) {
 
