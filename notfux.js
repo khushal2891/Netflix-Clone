@@ -380,7 +380,7 @@ function showcaseUI() {
         playButton.textContent = "Play";
         playIcon.className = "fa fa-play";
     }
-
+    
 }
 
 
