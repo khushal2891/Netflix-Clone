@@ -355,9 +355,13 @@ function showcaseUI() {
                 
             }, 2500); //waits 2.5 secs
 
-         } else {
+         } else if(playButton.textContent == "Play") {
             
-            video.play();
+            setTimeout(function() { 
+                
+                video.play();
+                
+            }, 2500); //waits 2.5 secs
         }
 
 
