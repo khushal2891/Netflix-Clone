@@ -346,6 +346,8 @@ function showcaseUI() {
     title.style.paddingTop = "50vh";
    
     if(video.paused) {
+        
+        video.poster = array[num].poster;
 
         if(playButton.textContent == "Pause") {
 
