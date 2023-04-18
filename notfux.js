@@ -138,6 +138,7 @@ const array = [
         name: 'Transcendent Man',
         logo: 'assets/logos/transcendent-man-logo.png',
         img: 'assets/pictures/transcendent-man.png',
+        poster: 'assets/background/transcendent-man.png',
         trailer: ['assets/trailers/transcendent-man.mp4'],
         genre: ['movies']
     },
@@ -156,6 +157,7 @@ const array = [
         name: 'Troy',
         logo: 'assets/logos/troy-logo.png',
         img: 'assets/pictures/troy.png',
+        poster: 'assets/background/troy.png',
         trailer: [
             'assets/trailers/troy-1.mp4',
             'assets/trailers/troy-2.mp4'    
