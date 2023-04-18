@@ -408,6 +408,7 @@ caret.addEventListener("click", function() {
 
 showcase.addEventListener("click", function() {
 
+    theater();
     showcaseUI();
 });
 
