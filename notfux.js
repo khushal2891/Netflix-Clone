@@ -347,15 +347,19 @@ function showcaseUI() {
    
     if(video.paused) {
 
-        setTimeout(function() { 
+        if(playButton.textContent == "Pause") {
 
-            if(playButton.textContent == "Pause") {
-
+            setTimeout(function() { 
+                
                 video.play();
-            }
+                
+            }, 2500); //waits 2.5 secs
+
+         } else {
             
-        }, 2500); //waits 2.5 secs
-        
+            video.play();
+        }
+    }
 
         if(array[num].trailer != 0) {
 
