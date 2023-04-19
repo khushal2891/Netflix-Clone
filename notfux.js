@@ -429,7 +429,7 @@ toggle.addEventListener("click", function() {
 
 
 //adds item to user watchlist
-watchList.addEventListener("click", event =>() {
+watchList.addEventListener("click", event => {
     
     event.stopPropagation();
     //video.play(); //always triggers pause once showcaseUI() function runs
