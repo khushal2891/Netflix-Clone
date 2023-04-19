@@ -357,7 +357,7 @@ function showcaseUI() {
 
          } else {
                 
-                video.play();
+            video.play();
                 
          }
 
