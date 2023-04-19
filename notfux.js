@@ -429,9 +429,10 @@ toggle.addEventListener("click", function() {
 
 
 //adds item to user watchlist
-watchList.addEventListener("click", function() {
-
-    video.play(); //always triggers pause once showcaseUI() function runs
+watchList.addEventListener("click", event =>() {
+    
+    event.stopPropagation();
+    //video.play(); //always triggers pause once showcaseUI() function runs
     
     let anchor = document.createElement("a");
     anchor.href = "#trailer"; 
@@ -464,7 +465,7 @@ watchList.addEventListener("click", function() {
 
     arrange();
 
-});
+}, { capture: true } );
 
 
 window.addEventListener("resize", function() {
