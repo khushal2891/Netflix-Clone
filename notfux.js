@@ -219,7 +219,21 @@ function arrange() {
                     
                     num = j;
                     theater();
-                    showcaseUI();
+
+                    if(playButton.textContent == "Play") {
+
+                        setTimeout(function() { 
+                            
+                            showcaseUI();    
+                            
+                        }, 2500); //waits 2.5 secs
+            
+                     } else {
+                            
+                        showcaseUI(); 
+                            
+                     }
+                    
                 }
             }
         });
@@ -355,11 +369,11 @@ function showcaseUI() {
                 
             }, 2500); //waits 2.5 secs
 
-         } else {
+        } else {
                 
             video.play();
                 
-         }
+        }
 
 
         if(array[num].trailer != 0) {
