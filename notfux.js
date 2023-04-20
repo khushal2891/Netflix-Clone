@@ -192,7 +192,6 @@ const title = document.querySelector(".showcase-title");
 const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
-const viewport = document.querySelector('meta[name=viewport]'); //to prevent mobile resize zoom
 
 let genre = ['watchlist', 'originals', 'movies', 'series', 'games', 'anime', 'TV Series']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
@@ -364,7 +363,7 @@ function showcaseUI() {
         if(playButton.textContent == "Pause") {
 
             setTimeout(function() { 
-                
+
                 video.play();
                 
             }, 2500); //waits 2.5 secs
@@ -429,9 +428,8 @@ toggle.addEventListener("click", function() {
 
 
 //adds item to user watchlist
-watchList.addEventListener("click", function () { //e => {
+watchList.addEventListener("click", function() { 
     
-    //e.stopPropagation();
     video.play(); //always triggers pause once showcaseUI() function runs
     
     let anchor = document.createElement("a");
@@ -457,15 +455,28 @@ watchList.addEventListener("click", function () { //e => {
         if(catalogue.children[h].children[0].textContent == "Watchlist") {
 
             catalogue.children[h].style.display = "block"; //visibly displays carousel
+            
+            
+/*             for(let j = 0; j < catalogue.children[h].children[1].children.length; j++) {
+                    //current selection                                                                  //selection in watchlist array
+                if(catalogue.children[h].children[1].children[0].children[0].children[1].textContent == catalogue.children[h].children[1].children[j].children[0].children[1].textContent) {
+                    console.log("yes");
+                } else {
+                    console.log("no");
+                }
+            } */
 
             //appends item at the beginning of the list
             catalogue.children[h].children[1].insertBefore(anchor, catalogue.children[h].children[1].children[0]);
+            
+
+
         }
     };
 
     arrange();
 
-}); //, { capture: true } );
+});
 
 
 window.addEventListener("resize", function() {
