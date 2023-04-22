@@ -204,6 +204,7 @@ nav {
 .showcase-img {
     object-fit: fill;
     margin-left:0.5%;
+    -webkit-user-drag: none;
     width: 180px;
 }
 
