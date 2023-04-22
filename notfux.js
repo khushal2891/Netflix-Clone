@@ -277,6 +277,7 @@ function display() {
 
             let img = new Image();
             img.src = obj.img;
+            img.setAttribute('draggable', false);
 
             for(let j = 0; j < obj.genre.length; j++) {
 
