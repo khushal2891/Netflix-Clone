@@ -99,6 +99,7 @@ header {
 
 .logo img { 
     margin: 12px 8rem 0px 2.5rem;
+    -webkit-user-drag:none;
     width: 140px;
 }
 
@@ -166,6 +167,7 @@ nav {
 .right-nav img { 
     border-radius: 6px;
     margin: 6px 10px 2.5px 10px;
+    -webkit-user-drag: none;
     width: 50px;
 }
 
@@ -183,6 +185,7 @@ nav {
     height: 180px;
     object-fit: fill;
     margin-left: 10px;
+    -webkit-user-drag: none;
     width: 280px;
 }
 
