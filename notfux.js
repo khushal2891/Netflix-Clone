@@ -188,7 +188,7 @@ const caret = document.querySelector(".fa-caret-down");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
 const header = document.querySelector("header");
 const showcase = document.querySelector(".showcase"); //background where video displays
-const title = document.querySelector(".showcase-title");
+const title = document.querySelector(".showcase-title"); //video logo section
 const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
 const watchList = document.getElementById("list"); //used to identify watchlist carousel
@@ -225,7 +225,7 @@ function arrange() {
                             
                             showcaseUI();    
                             
-                        }, 2500); //waits 2.5 secs
+                        }, 2500); //waits 2.5 secs to show poster image
             
                      } else {
                             
@@ -253,8 +253,8 @@ function display() {
         outer.classList.add("category");
 
         let h3 = document.createElement("h3");
-        h3.textContent = genre[i][0].toUpperCase() + genre[i].slice(1);
-        h3.id = genre[i];
+        h3.textContent = genre[i][0].toUpperCase() + genre[i].slice(1); //makes 1st letter Capital
+        h3.id = genre[i]; //set id for the h3 title
 
         let inner = document.createElement("div");
         inner.classList.add("carousel");
