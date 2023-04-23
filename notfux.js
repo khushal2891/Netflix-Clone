@@ -457,20 +457,19 @@ watchList.addEventListener("click", function() {
 
             catalogue.children[h].style.display = "block"; //visibly displays carousel
             
-            
-/*             for(let j = 0; j < catalogue.children[h].children[1].children.length; j++) {
-                    //current selection                                                                  //selection in watchlist array
-                if(catalogue.children[h].children[1].children[0].children[0].children[1].textContent == catalogue.children[h].children[1].children[j].children[0].children[1].textContent) {
-                    console.log("yes");
-                } else {
-                    console.log("no");
+
+            for(let j = 0; j < catalogue.children[h].children[1].children.length; j++) {
+                
+                //checks watchlist array for previous copies of current item
+                if(anchor.children[0].children[1].textContent == catalogue.children[h].children[1].children[j].children[0].children[1].textContent) {
+                                        
+                    //removes duplicate from array
+                    catalogue.children[h].children[1].children[j].remove();
                 }
-            } */
+            }
 
-            //appends item at the beginning of the list
+            //append current selection at the beginning of the list
             catalogue.children[h].children[1].insertBefore(anchor, catalogue.children[h].children[1].children[0]);
-            
-
 
         }
     };
