@@ -108,7 +108,7 @@ const array = [
         name: 'Mass Effect: Legendary Edition',
         logo: 'assets/logos/mass-effect-logo.png',
         img: 'assets/pictures/mass-effect-legendary.png',
-        poster: '',
+        poster: 'assets/background/mass-effect-legendary.png',
         trailer: [
             'assets/trailers/mass-effect-legendary.mp4',
             'assets/trailers/mass-effect-legendary-short.mp4',
