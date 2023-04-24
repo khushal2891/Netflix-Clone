@@ -105,6 +105,19 @@ const array = [
         genre: ['anime', 'originals', 'series']
     },
     {
+        name: 'Mass Effect: Legendary Edition',
+        logo: 'assets/logos/mass-effect-logo.png',
+        img: 'assets/pictures/mass-effect-legendary.png',
+        poster: '',
+        trailer: [
+            'assets/trailers/mass-effect-legendary.mp4',
+            'assets/trailers/mass-effect-legendary-short.mp4',
+            'assets/trailers/mass-effect-2.mp4',
+            'assets/trailers/mass-effect-trilogy.mp4'
+        ],
+        genre: ['games']
+    },
+    {
         name: 'Neon Genesis Evangelion',
         logo: 'assets/logos/evangelion-logo.png',
         img: 'assets/pictures/evangelion.png',
