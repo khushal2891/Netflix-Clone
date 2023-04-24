@@ -113,6 +113,7 @@ const array = [
             'assets/trailers/mass-effect-legendary.mp4',
             'assets/trailers/mass-effect-legendary-short.mp4',
             'assets/trailers/mass-effect-2.mp4',
+            'assets/trailers/mass-effect-3.mp4',
             'assets/trailers/mass-effect-trilogy.mp4'
         ],
         genre: ['games']
