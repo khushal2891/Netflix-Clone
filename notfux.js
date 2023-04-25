@@ -213,6 +213,7 @@ let playButton = document.getElementById("play-button"); //play || pause
 let playIcon = document.getElementById("play-icon"); //play || pause --icon
 let selection; //will hold array of class selection items
 let showcaseImg = document.querySelector(".showcase-img"); //for video title logos
+let trailers; //for video source selection
 
 
 //arranges array length
@@ -390,6 +391,7 @@ function showcaseUI() {
         }
 
 
+        //if no trailer exists
         if(array[num].trailer != 0) {
 
             playButton.textContent = "Pause";
@@ -422,7 +424,8 @@ function theater() {
 
     //allows for multiple object array trailers to randomly play
     video.poster = array[num].poster;
-    video.src = array[num].trailer[randomRange(0, array[num].trailer.length - 1)];
+    trailers = randomRange(0, array[num].trailer.length - 1); //random video selection
+    video.src = array[num].trailer[trailers];
 }
 
 
@@ -498,6 +501,19 @@ window.addEventListener("resize", function() {
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
 });
+
+
+video.onended = function () {
+    
+    trailers++
+
+    if(trailers > array[num].trailer.length - 1) {
+        trailers = 0;
+    }
+
+    video.src = array[num].trailer[trailers];
+    video.play();
+}
 
 
 window.onload = function() { 
