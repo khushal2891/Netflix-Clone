@@ -512,8 +512,15 @@ video.onended = function () {
     }
 
     video.src = array[num].trailer[trailers];
-    video.play();
-}
+    
+    setTimeout(function() { 
+
+        if(playButton.textContent == "Pause") {
+
+            video.play();
+        }
+    }, 1500); //waits 1.5 sec
+};
 
 
 window.onload = function() { 
