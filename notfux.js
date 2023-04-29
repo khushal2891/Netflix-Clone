@@ -264,9 +264,6 @@ function arrange() {
 //creates objects in webpage from array
 function display() {
 
-    playButton.textContent = "Play";
-    playIcon.src = 'assets/play.png';
-
     for(let i = 0; i < genre.length; i++) {
 
         let outer = document.createElement("div");
