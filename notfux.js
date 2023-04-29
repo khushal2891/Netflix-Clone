@@ -422,7 +422,7 @@ function theater() {
     
     //displays corresponding item logo
     showcaseImg.src = array[num].logo;
-    showcaseImg.style.height = '54px';
+    showcaseImg.style.height = '52px';
 
     //allows for multiple object array trailers to randomly play
     video.poster = array[num].poster;
