@@ -215,7 +215,7 @@ const watchList = document.getElementById("list"); //used to identify watchlist 
 let genre = ['watchlist', 'originals', 'movies', 'series', 'games', 'anime', 'TV Series']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
 let playButton = document.getElementById("play-button"); //play || pause
-let playIcon = document.getElementById("play-icon"); //play || pause --icon
+let playIcon = document.getElementById("play-icon"); //play || pause ,image
 let selection; //will hold array of class selection items
 let showcaseImg = document.querySelector(".showcase-img"); //for video title logos
 let trailers; //for video source selection
@@ -265,7 +265,7 @@ function arrange() {
 function display() {
 
     playButton.textContent = "Play";
-    playIcon.className = "fa fa-play";
+    playIcon.src = 'assets/play.png';
 
     for(let i = 0; i < genre.length; i++) {
 
@@ -400,7 +400,7 @@ function showcaseUI() {
         if(array[num].trailer != 0) {
 
             playButton.textContent = "Pause";
-            playIcon.className = "fa fa-pause";
+            playIcon.src = 'assets/pause.png';
 
             header.style.transition = "5s ease-in-out 1000ms";
             header.style.marginTop = "-25vh";
@@ -414,7 +414,7 @@ function showcaseUI() {
         video.pause();
 
         playButton.textContent = "Play";
-        playIcon.className = "fa fa-play";
+        playIcon.src = 'assets/play.png';
     }
     
 }
