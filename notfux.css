@@ -148,12 +148,9 @@ nav {
     padding-top:4px;
 }
 
-.plus {
-    font-size: 27.5px;
-    font-weight:bolder;
-    padding-bottom:0;
-    margin-top:-4px;
-    margin-bottom:-2.5px;
+#plus { 
+    height: 1.15rem;
+    margin-top:3px;
 }
 
 .right-nav { 
