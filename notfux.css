@@ -139,8 +139,9 @@ nav {
 }
 
 #play-icon {
-    font-size: 16px;
-    padding-top:4px;
+    height:1.1rem;
+    margin-top:4px;
+    margin-bottom:-4px;
 }
 
 #play-button {
