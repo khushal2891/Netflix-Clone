@@ -72,6 +72,7 @@ const array = [
             'assets/trailers/game-of-thrones-s8-2.mp4',
             'assets/trailers/game-of-thrones-s8-3.mp4',
             'assets/trailers/game-of-thrones-s8-4.mp4',
+            'assets/trailers/game-of-thrones-s8-5.mp4'
             ],
         genre: ['originals', 'series', 'TV Series']
     },
