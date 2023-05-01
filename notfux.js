@@ -514,7 +514,7 @@ watchList.addEventListener("click", function() {
 });
 
 
-window.addEventListener("resize", function() {
+/* window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
@@ -522,7 +522,22 @@ window.addEventListener("resize", function() {
         viewStyle();
     }, 25);
     
-});
+}); */
+
+//prevents mobile resize bug?
+setTimeout(function() {
+    window.addEventListener("resize", function() {
+
+        header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
+        
+       //Only way found to avoid a resize bug on mobile
+        setTimeout(function() {
+
+            viewStyle();
+
+        },50);
+    });
+}, 25);
 
 
 video.onended = function () {
