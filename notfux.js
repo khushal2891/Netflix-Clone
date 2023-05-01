@@ -308,6 +308,8 @@ function display() {
             figure.append(figCaption);
         });
 
+
+        viewStyle(); // sets background view
     }
 
 
@@ -431,6 +433,20 @@ function theater() {
 }
 
 
+//Best view for portrait or landscape mode
+function viewStyle() {
+
+    if(window.innerHeight > window.innerWidth) {
+
+        video.style.objectFit = "fill"; //portrait mode
+
+    } else {
+
+        video.style.objectFit = "cover"; //landscape mode
+    }
+}
+
+
 caret.addEventListener("click", function() {
 
     fullscreen();
@@ -502,6 +518,7 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
+    viewStyle();
 });
 
 
