@@ -518,7 +518,10 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
-    viewStyle();
+    setTimeout(function () {
+        viewStyle();
+    }, 25);
+    
 });
 
 
