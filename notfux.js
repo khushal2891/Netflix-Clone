@@ -206,7 +206,7 @@ const array = [
 const caret = document.querySelector(".fa-caret-down");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
 const header = document.querySelector("header");
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); //checks if mobile device 
 const showcase = document.querySelector(".showcase"); //background where video displays
 const title = document.querySelector(".showcase-title"); //video logo section
 const toggle = document.querySelector(".togglebtn");
@@ -369,33 +369,6 @@ function randomRange(min,max) {
 //Math.random() returns a random decimal between 0 - 0.99
 }
 
-/*
-function simulateTap(element) {
-  // Create a touch event object
-  const touchStartEvent = new TouchEvent('touchstart', {
-    bubbles: true,
-    cancelable: true,
-    composed: true,
-    touches: [{ identifier: 0, target: element, clientX: 0, clientY: 0, pageX: 0, pageY: 0, screenX: 0, screenY: 0 }],
-  });
-  const touchEndEvent = new TouchEvent('touchend', {
-    bubbles: true,
-    cancelable: true,
-    composed: true,
-    touches: [],
-  });
-
-
-  // Dispatch the touchstart and touchend events to the target element
-  element.dispatchEvent(touchStartEvent);
-  element.dispatchEvent(touchEndEvent);
-}
-
-// Usage example
-const targetElement = document.querySelector('#your-target-element');
-simulateTap(targetElement);
-*/
-
 
 //play or pause, video & button
 function showcaseUI() {
@@ -464,11 +437,11 @@ function theater() {
 //Best view for portrait or landscape mode?
 function viewStyle() {
 
-
     if(window.innerHeight > window.innerWidth) {
 
         video.style.objectFit = "fill"; //portrait mode
-
+        
+        //this fixes a bug in mobile 
         if(isMobile && playButton.textContent == "Pause") {
             
             video.play();
@@ -552,10 +525,11 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
+    //timeout fixes a bug on mobile 
     setTimeout(function() { 
         
         viewStyle();
-    }, 25);
+    }, 15);
     
 });
 
