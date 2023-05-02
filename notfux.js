@@ -309,7 +309,7 @@ function display() {
         });
 
 
-        //viewStyle(); // sets background view
+        viewStyle(); // sets background view
     }
 
 
@@ -433,18 +433,20 @@ function theater() {
 }
 
 
-/* //Best view for portrait or landscape mode?
+//Best view for portrait or landscape mode?
 function viewStyle() {
 
     if(window.innerHeight > window.innerWidth) {
 
         video.style.objectFit = "fill"; //portrait mode
+        video.style.height = "100vh";
+        video.style.width = "100%";
 
     } else {
 
         video.style.objectFit = "cover"; //landscape mode
     }
-} */
+}
 
 
 caret.addEventListener("click", function() {
@@ -518,7 +520,7 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
-    //viewStyle();
+    viewStyle();
     
 });
 
