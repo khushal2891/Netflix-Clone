@@ -441,9 +441,12 @@ function viewStyle() {
         video.style.objectFit = "fill"; //portrait mode
         video.style.height = "100vh";
         video.style.width = "100%";
-        video.pause();
-        video.play();
 
+        if(video.play) {
+            video.pause();
+            video.play();
+        }
+        
     } else {
 
         video.style.objectFit = "cover"; //landscape mode
