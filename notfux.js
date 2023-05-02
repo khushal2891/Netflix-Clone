@@ -471,7 +471,7 @@ function viewStyle() {
 
         if(isMobile && playButton.textContent == "Pause") {
             //video.pause();
-            video.play();
+            //video.play();
         }
         
     } else {
