@@ -308,8 +308,6 @@ function display() {
             figure.append(img);
             figure.append(figCaption);
         });
-
-
         
     }
 
