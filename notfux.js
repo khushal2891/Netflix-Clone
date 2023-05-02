@@ -529,7 +529,7 @@ window.addEventListener("resize", function() {
     setTimeout(function() { 
         
         viewStyle();
-    }, 5);
+    }, 10);
     
 });
 
