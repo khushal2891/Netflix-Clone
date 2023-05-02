@@ -206,6 +206,7 @@ const array = [
 const caret = document.querySelector(".fa-caret-down");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
 const header = document.querySelector("header");
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const showcase = document.querySelector(".showcase"); //background where video displays
 const title = document.querySelector(".showcase-title"); //video logo section
 const toggle = document.querySelector(".togglebtn");
@@ -439,10 +440,8 @@ function viewStyle() {
     if(window.innerHeight > window.innerWidth) {
 
         video.style.objectFit = "fill"; //portrait mode
-        video.style.height = "100vh";
-        video.style.width = "100%";
 
-        if(video.play) {
+        if(isMobile && video.play) {
             video.pause();
             video.play();
         }
