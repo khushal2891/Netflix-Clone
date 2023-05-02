@@ -442,7 +442,7 @@ function viewStyle() {
         video.style.objectFit = "fill"; //portrait mode
 
         if(isMobile && playButton.textContent == "Pause") {
-            video.pause();
+            //video.pause();
             video.play();
         }
         
