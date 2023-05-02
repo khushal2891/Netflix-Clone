@@ -310,7 +310,7 @@ function display() {
         });
 
 
-        //viewStyle(); // sets background view
+        
     }
 
 
@@ -464,6 +464,7 @@ function theater() {
 //Best view for portrait or landscape mode?
 function viewStyle() {
 
+
     if(window.innerHeight > window.innerWidth) {
 
         video.style.objectFit = "fill"; //portrait mode
@@ -551,7 +552,10 @@ window.addEventListener("resize", function() {
         
     header.style.transition = "0s ease-in-out 0ms"; //header width changes occur fast on screen resize
     
-    viewStyle();
+    setTimeout(function() { 
+        
+        viewStyle();
+    }, 25);
     
 });
 
