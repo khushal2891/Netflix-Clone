@@ -310,7 +310,7 @@ function display() {
         });
 
 
-        viewStyle(); // sets background view
+        //viewStyle(); // sets background view
     }
 
 
