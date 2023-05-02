@@ -369,6 +369,33 @@ function randomRange(min,max) {
 //Math.random() returns a random decimal between 0 - 0.99
 }
 
+/*
+function simulateTap(element) {
+  // Create a touch event object
+  const touchStartEvent = new TouchEvent('touchstart', {
+    bubbles: true,
+    cancelable: true,
+    composed: true,
+    touches: [{ identifier: 0, target: element, clientX: 0, clientY: 0, pageX: 0, pageY: 0, screenX: 0, screenY: 0 }],
+  });
+  const touchEndEvent = new TouchEvent('touchend', {
+    bubbles: true,
+    cancelable: true,
+    composed: true,
+    touches: [],
+  });
+
+
+  // Dispatch the touchstart and touchend events to the target element
+  element.dispatchEvent(touchStartEvent);
+  element.dispatchEvent(touchEndEvent);
+}
+
+// Usage example
+const targetElement = document.querySelector('#your-target-element');
+simulateTap(targetElement);
+*/
+
 
 //play or pause, video & button
 function showcaseUI() {
