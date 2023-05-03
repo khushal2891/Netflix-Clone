@@ -223,7 +223,7 @@ video {
     margin:0;
     padding:0;
     height: 100vh;
-    object-fit: fill;
+    object-fit: cover;
     position: absolute;
         left: 0;
         top: 0;
