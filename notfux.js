@@ -554,6 +554,7 @@ video.onended = function () {
 
 window.onload = function() { 
 
+    viewStyle();
     display();
     theater();
     arrange();
