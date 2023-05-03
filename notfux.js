@@ -527,7 +527,7 @@ window.addEventListener("resize", function() {
     setTimeout(function() { 
         
         viewStyle();
-    }, 20);
+    }, 25);
     
 });
 
