@@ -35,6 +35,7 @@ const array = [
         img: 'assets/pictures/big-o.png',
         poster: 'assets/background/big-o.png',
         trailer: [
+            'assets/trailers/big-o.mp4',
             'assets/trailers/big-o-opening-1.mp4',
             'assets/trailers/big-o-opening-2.mp4',
             'assets/trailers/big-o-credits.mp4'
@@ -129,6 +130,7 @@ const array = [
         img: 'assets/pictures/evangelion.png',
         poster: 'assets/background/evangelion.png',
         trailer: [
+            'assets/trailers/evangelion.mp4',
             'assets/trailers/evangelion-opening.mp4',
             'assets/trailers/evangelion-credits.mp4'
         ],
