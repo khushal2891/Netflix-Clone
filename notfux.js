@@ -84,6 +84,7 @@ const array = [
         poster: 'assets/background/ghost-in-the-shell.png',
         trailer: [
             'assets/trailers/ghost-first-gig.mp4', 
+            'assets/trailers/ghost-in-the-shell.mp4', 
             'assets/trailers/ghost-second-gig.mp4'
         ],
         genre: ['anime', 'series']
