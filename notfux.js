@@ -153,7 +153,10 @@ const array = [
         logo: 'assets/logos/champloo-logo.png',
         img: 'assets/pictures/samurai-champloo.jpg',
         poster: 'assets/background/samurai-champloo.png',
-        trailer: ['assets/trailers/samurai-champloo.mp4'],
+        trailer: [
+            'assets/trailers/samurai-champloo.mp4',
+            'assets/trailers/samurai-champloo-opening.mp4'
+            ],
         genre: ['anime', 'series']
     },
     {
