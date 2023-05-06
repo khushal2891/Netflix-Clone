@@ -160,6 +160,18 @@ const array = [
         genre: ['anime', 'series']
     },
     {
+        name: 'StarCraft 2',
+        logo: 'assets/logos/starcraft2-logo.png',
+        img: 'assets/pictures/starcraft2.png',
+        poster: 'assets/background/starcraft2.png',
+        trailer: [
+            'assets/trailers/starcraft2-wings-of-liberty-1.mp4',
+            'assets/trailers/starcraft2-wings-of-liberty-2.mp4',
+            'assets/trailers/starcraft2-wings-of-liberty-3.mp4',
+            ],
+        genre: ['games']
+    },
+    {
         name: 'Transcendent Man',
         logo: 'assets/logos/transcendent-man-logo.png',
         img: 'assets/pictures/transcendent-man.png',
