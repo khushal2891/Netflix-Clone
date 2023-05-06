@@ -174,6 +174,7 @@ const array = [
         poster: 'assets/background/trigun.png',
         trailer: [
             'assets/trailers/trigun.mp4', 
+            'assets/trailers/trigun-opening.mp4', 
             'assets/trailers/trigun-credits.mp4'
             ],
         genre: ['anime', 'series']
