@@ -168,7 +168,9 @@ const array = [
         trailer: [
             'assets/trailers/starcraft2-wings-of-liberty-1.mp4',
             'assets/trailers/starcraft2-wings-of-liberty-2.mp4',
-            'assets/trailers/starcraft2-wings-of-liberty-3.mp4'
+            'assets/trailers/starcraft2-wings-of-liberty-3.mp4',
+            'assets/trailers/starcraft2-heart-of-the-swarm-1.mp4',
+            'assets/trailers/starcraft2-heart-of-the-swarm-2.mp4'
             ],
         genre: ['games']
     },
