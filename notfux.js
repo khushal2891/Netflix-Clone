@@ -155,7 +155,8 @@ const array = [
         poster: 'assets/background/samurai-champloo.png',
         trailer: [
             'assets/trailers/samurai-champloo.mp4',
-            'assets/trailers/samurai-champloo-opening.mp4'
+            'assets/trailers/samurai-champloo-opening.mp4',
+            'assets/trailers/samurai-champloo-funimation.mp4'
             ],
         genre: ['anime', 'series']
     },
