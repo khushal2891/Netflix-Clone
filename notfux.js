@@ -228,6 +228,7 @@ const array = [
 ];
 
 
+const buttons = document.querySelectorAll("button");
 const caret = document.querySelector(".fa-caret-down");
 const catalogue = document.querySelector(".catalogue"); //parent to all carousels on document
 const header = document.querySelector("header");
@@ -236,10 +237,12 @@ const showcase = document.querySelector(".showcase"); //background where video d
 const title = document.querySelector(".showcase-title"); //video logo section
 const toggle = document.querySelector(".togglebtn");
 const video = document.getElementById("video"); 
-const watchList = document.getElementById("list"); //used to identify watchlist carousel
+const watchList = document.getElementById("list"); //watchlist button
 
 let genre = ['watchlist', 'originals', 'movies', 'series', 'games', 'anime', 'TV Series']; //used to create carousel genres 
 let num = randomRange(0, array.length - 1); //sets random number within array size
+let opaque = 1;
+let opaqueInt;
 let playButton = document.getElementById("play-button"); //play || pause
 let playIcon = document.getElementById("play-icon"); //play || pause ,image
 let selection; //will hold array of class selection items
@@ -401,6 +404,7 @@ function showcaseUI() {
     header.style.marginBottom = "0";
     showcase.style.minHeight = "70vh";
     title.style.paddingTop = "50vh";
+    clearInterval(opaqueInt);
    
     if(video.paused) {
 
@@ -409,27 +413,50 @@ function showcaseUI() {
             setTimeout(function() { 
 
                 video.play();
-                
+
             }, 2500); //waits 2.5 secs
 
         } else {
                 
             video.play();
-                
         }
 
 
-        //if no trailer exists
+        //checks if trailer exists
         if(array[num].trailer != 0) {
 
             playButton.textContent = "Pause";
             playIcon.src = 'assets/pause.png';
-
+                
             header.style.transition = "5s ease-in-out 1000ms";
             header.style.marginTop = "-25vh";
             header.style.marginBottom = "25vh";
             showcase.style.minHeight = "90vh";
-            title.style.paddingTop = "69vh";
+
+            if(isMobile) { //if mobile and tablets
+
+                title.style.paddingTop = "69vh";
+
+            } else {
+
+                title.style.paddingTop = "80vh"; //lowers title graphic more
+
+                if(opaque >= 1) { //makes buttons transparent
+                    opaqueInt = setInterval(function() {
+                        
+                        if(opaque <= 0.00) {
+                            clearInterval(opaqueInt);
+                        }
+                        
+                        opaque -= Math.round(0.05 * 100) / 100;
+                        
+                        for(b = 0; b < buttons.length; b++) {
+                            buttons[b].style.opacity = `${opaque}`;
+                        } 
+        
+                    }, 250);
+                }
+            }
         }
 
     } else {
@@ -438,6 +465,22 @@ function showcaseUI() {
 
         playButton.textContent = "Play";
         playIcon.src = 'assets/play.png';
+
+        if(opaque < 1) { //if buttons are transparent
+            opaqueInt = setInterval(function() {
+                
+                if(opaque >= 1) {
+                    clearInterval(opaqueInt);
+                }
+                
+                opaque += Math.round(0.05 * 100) / 100;
+                
+                for(b = 0; b < buttons.length; b++) {
+                    buttons[b].style.opacity = `${opaque}`;
+                } 
+
+            }, 100);
+        }
     }
     
 }
@@ -474,6 +517,7 @@ function viewStyle() {
 
         video.style.objectFit = "cover"; //landscape mode
     }
+
 }
 
 
@@ -541,6 +585,55 @@ watchList.addEventListener("click", function() {
 
     arrange();
 
+});
+
+
+window.addEventListener("mousemove", function() {
+
+    if(!video.paused) { 
+        
+        clearInterval(opaqueInt);
+
+        if(opaque <= 1) {
+            opaqueInt = setInterval(function() {
+                
+                if(opaque >= 1) {
+                    clearInterval(opaqueInt);
+                }
+                
+                opaque += Math.round(0.05 * 100) / 100;
+                
+                for(b = 0; b < buttons.length; b++) {
+                    buttons[b].style.opacity = `${opaque}`;
+                } 
+
+            }, 100);
+            
+
+            setTimeout(function() {
+                
+                if(!video.paused && opaque >= 1) {  
+
+                    clearInterval(opaqueInt);
+
+                    opaqueInt = setInterval(function() {
+                        
+                        if(opaque <= 0.00) {
+                            clearInterval(opaqueInt);
+                        }
+                        
+                        opaque -= Math.round(0.05 * 100) / 100;
+                        
+                        for(b = 0; b < buttons.length; b++) {
+                            buttons[b].style.opacity = `${opaque}`;
+                        } 
+        
+                    }, 250);
+                }
+
+            }, 5000); //waits 5 seconds       
+        }
+    }
 });
 
 
