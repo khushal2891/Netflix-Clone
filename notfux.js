@@ -590,7 +590,7 @@ watchList.addEventListener("click", function() {
 
 window.addEventListener("mousemove", function() {
 
-    if(!video.paused) { 
+    if(!video.paused && !isMobile) { 
         
         clearInterval(opaqueInt);
 
