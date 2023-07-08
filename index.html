@@ -21,11 +21,15 @@
        
         <link rel="stylesheet" type="text/css" href="notfux.css">
 
+        <!-- defer loads html first then JS -->
+        <script defer type="text/javascript" src="notfux.js"></script>
+
         <title>Not-Netflix</title>
     </head>
 
     
     <body>
+
         <main>
 
             <header id="trailer">
@@ -119,9 +123,6 @@
         <video playsinline preload="auto" id="video">
             <source src="" type="video/mp4"/>
         </video>        
-
-
-        <script src="notfux.js"></script>
 
     </body>
 
