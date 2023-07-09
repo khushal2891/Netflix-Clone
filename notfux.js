@@ -495,7 +495,13 @@ function theater() {
 
     //allows for multiple object array trailers to randomly play
     video.poster = array[num].poster;
-    trailers = randomRange(0, array[num].trailer.length - 1); //random video selection
+
+    if(array[num].name == 'Game Of Thrones') {
+        trailers = randomRange(0, 6); //no random spoilers
+    } else {
+        trailers = randomRange(0, array[num].trailer.length - 1); //random video selection
+    }
+
     video.src = array[num].trailer[trailers];
 }
 
@@ -590,7 +596,7 @@ watchList.addEventListener("click", function() {
 
 window.addEventListener("mousemove", function() {
 
-    if(!video.paused && !isMobile) { 
+    if(!video.paused && !isMobile) { //only runs if video is playing & not mobile device
         
         clearInterval(opaqueInt);
 
@@ -612,7 +618,7 @@ window.addEventListener("mousemove", function() {
 
             setTimeout(function() {
                 
-                if(!video.paused && opaque >= 1) {  
+                if(!video.paused && opaque >= 1) { 
 
                     clearInterval(opaqueInt);
 
